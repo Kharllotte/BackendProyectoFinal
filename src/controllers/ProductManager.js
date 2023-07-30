@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid'
 
 class ProductManager {
     constructor(){
-        this.path = "./src/models/products.json"
+        this.path = "./src/dao/models/fileSystem/products.json"
         // this.path ="/Users/LILIANA/Documents/BACK/proyecto final/src/controllers/ProductsManager.js"
     }
 

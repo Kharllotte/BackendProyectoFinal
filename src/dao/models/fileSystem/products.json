@@ -1,0 +1,82 @@
+[
+  {
+    "id": "LF1001",
+    "title": "Limpiador facial suave",
+    "descripcion": "Gel limpiador facial suave para todo tipo de piel",
+    "price": 350,
+    "code": 12345,
+    "stock": 50
+  },
+  {
+    "id": "CH2002",
+    "title": "Crema hidratante revitalizante",
+    "descripcion": "Crema hidratante con vitaminas y antioxidantes",
+    "price": 550,
+    "code": 67890,
+    "stock": 25
+  },
+  {
+    "id": "PS3003",
+    "title": "Protector solar SPF 50+",
+    "descripcion": "Protector solar de amplio espectro con alta protección",
+    "price": 420,
+    "code": 54321,
+    "stock": 40
+  },
+  {
+    "id": "BM4004",
+    "title": "Base de maquillaje de cobertura media",
+    "descripcion": "Base de maquillaje que iguala el tono de piel y disimula imperfecciones",
+    "price": 680,
+    "code": 98765,
+    "stock": 15
+  },
+  {
+    "id": "MP5005",
+    "title": "Máscara de pestañas voluminizadora",
+    "descripcion": "Máscara de pestañas que da volumen y alarga las pestañas",
+    "price": 280,
+    "code": 13579,
+    "stock": 35
+  },
+  {
+    "id": "LB6006",
+    "title": "Labial de larga duración",
+    "descripcion": "Labial de acabado mate que permanece intacto durante horas",
+    "price": 390,
+    "code": 24680,
+    "stock": 20
+  },
+  {
+    "id": "SF7007",
+    "title": "Sérum facial anti-envejecimiento",
+    "descripcion": "Sérum con colágeno y ácido hialurónico para una piel más firme y suave",
+    "price": 890,
+    "code": 11223,
+    "stock": 10
+  },
+  {
+    "id": "EC8008",
+    "title": "Exfoliante corporal de coco",
+    "descripcion": "Exfoliante con partículas de coco para una piel suave y renovada",
+    "price": 450,
+    "code": 33445,
+    "stock": 28
+  },
+  {
+    "id": "PF9009",
+    "title": "Perfume floral elegante",
+    "descripcion": "Perfume con notas de flores blancas y toques amaderados",
+    "price": 1250,
+    "code": 55667,
+    "stock": 5
+  },
+  {
+    "id": "CN1010",
+    "title": "Crema hidratante para manos y uñas",
+    "descripcion": "Crema enriquecida con aceite de almendras para manos suaves y uñas fuertes",
+    "price": 320,
+    "code": 77889,
+    "stock": 18
+  }
+]
