@@ -1,6 +1,7 @@
 import express from "express";
-import productRouter from "./routes/products.routes.js";
-import cartRouter from "./routes/carts.routes.js";
+import productRouter from "./routes/mongodb/products.routes.js";
+import productsRouterView from "./routes/views/products.routes.js";
+import cartRouter from "./routes/mongodb/carts.routes.js";
 import env from "./config/env.js";
 import { Server } from "socket.io";
 import mongoose from "mongoose";
@@ -11,6 +12,9 @@ import __dirname from "./utils/index.js";
 import * as http from "http";
 
 import handlebars from "express-handlebars";
+import Handlebars from "handlebars";
+import { allowInsecurePrototypeAccess } from '@handlebars/allow-prototype-access';
+
 import session from "express-session";
 import morgan from "morgan";
 
@@ -57,7 +61,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 // config handlebars
-app.engine("handlebars", handlebars.engine());
+app.engine("handlebars", handlebars.engine({
+  handlebars: allowInsecurePrototypeAccess(Handlebars)
+}));
 app.set("view engine", "handlebars");
 app.set("views", `${__dirname}/views`);
 
@@ -67,9 +73,10 @@ app.use("/", express.static(__dirname + "/public"));
 // -- routes
 // apis
 app.use("/api/products", productRouter);
-app.use("/api/cart", cartRouter);
-//views
+app.use("/api/carts", cartRouter);
+//web
 app.use("/chat", chatRouter);
+app.use("/products", productsRouterView);
 
 // config port
 const port = env.PORT;

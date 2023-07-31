@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./css/table.css" />
+<table>
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>ID</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+      <th>Categoría</th>
+      <th>Stock</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+      <tr>
+        <td>{{this.title}}</td>
+        <td>{{this._id}}</td>
+        <td>{{this.description}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.category}}</td>
+        <td>{{this.stock}}</td>
+        <td>
+          <a href="/products/{{this._id}}" class="see">Ver</a>
+          <button class="add-to-cart" id="add" data-id="{{this._id}}">Agregar al
+            carrito</button>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+<script src="/js/addCart.js"></script>

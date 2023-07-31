@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Estilos para el ícono de carrito */
+.fas {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  position: relative; /* Permite posicionar el contador dentro del ícono */
+}
+
+/* Estilos para el contador de artículos en el carrito */
+#cart-counter {
+  position: absolute;
+  top: 9px;
+  right: 3px;
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+}

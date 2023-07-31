@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/product.css" />
+
+<div class="product-details">
+  <h1>{{product.title}}</h1>
+  <p>{{product.description}}</p>
+  <p><strong>Precio:</strong> ${{product.price}}</p>
+  <p><strong>Categoría:</strong> {{product.category}}</p>
+  <p><strong>Stock:</strong> {{product.stock}}</p>
+</div>
+
+<div class="add-to-cart-container">
+  <button class="add-to-cart" data-id="{{product._id}}">Agregar al carrito</button>
+</div>
+
+<div class="add-to-cart-container">
+  <a href="/products">Volver</a>
+</div>
+
+<script src="/js/addCart.js"></script>

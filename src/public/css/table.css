@@ -1,0 +1,47 @@
+/* styles.css */
+
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para los botones */
+button.add-to-cart {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para los botones */
+a.see {
+  background-color: #3e6aad;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+a.see:hover {
+  background-color: #3e6aad;
+}
