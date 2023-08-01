@@ -4,20 +4,20 @@ const closeButton = document.getElementById("close-button");
 const cartItemsList = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 
-let idCart = localStorage.getItem('_idCart');
-
 // Función para abrir el popup
 function openPopup() {
+  const idCart = localStorage.getItem("_idCart");
+
   popup.style.display = "block";
   axios
-  .get(`/api/carts/${idCart}`)
-  .then((response) => {
-    const products = response.data.payload.products;
-    displayProducts(products);
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
+    .get(`/api/carts/${idCart}`)
+    .then((response) => {
+      const products = response.data.payload.products;
+      displayProducts(products);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
 
 // Función para cerrar el popup
@@ -35,6 +35,8 @@ document.addEventListener("click", (e) => {
   if (e.target.matches(".action-cart")) {
     const action = e.target.dataset.action;
     const _idProduct = e.target.dataset.id;
+    
+    const idCart = localStorage.getItem("_idCart");
 
     if (action === "minus" || action === "plus") {
       let amount = Number(e.target.dataset.amount);
