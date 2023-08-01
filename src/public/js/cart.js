@@ -4,11 +4,13 @@ const closeButton = document.getElementById("close-button");
 const cartItemsList = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 
+let idCart = localStorage.getItem('_idCart');
+
 // Función para abrir el popup
 function openPopup() {
   popup.style.display = "block";
   axios
-  .get(`/api/carts/${_idCart}`)
+  .get(`/api/carts/${idCart}`)
   .then((response) => {
     const products = response.data.payload.products;
     displayProducts(products);
@@ -39,7 +41,7 @@ document.addEventListener("click", (e) => {
       amount = action === "minus" ? amount - 1 : amount + 1;
 
       axios
-        .put(`/api/carts/${_idCart}/products/${_idProduct}`, {
+        .put(`/api/carts/${idCart}/products/${_idProduct}`, {
           amount,
         })
         .then((response) => {
@@ -51,7 +53,7 @@ document.addEventListener("click", (e) => {
         });
     } else {
       axios
-        .delete(`/api/carts/${_idCart}/products/${_idProduct}`)
+        .delete(`/api/carts/${idCart}/products/${_idProduct}`)
         .then((response) => {
           const products = response.data.payload.products;
           displayProducts(products);
