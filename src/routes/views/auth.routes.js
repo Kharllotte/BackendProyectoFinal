@@ -8,6 +8,7 @@ const layout = "logout";
 authRouterView.get("/login", async (req, res) => {
   return res.render("login", {
     layout,
+    isLogin: true
   });
 });
 
@@ -22,6 +23,7 @@ authRouterView.post(
 authRouterView.get("/signup", async (req, res) => {
   return res.render("signup", {
     layout,
+    isLogin: false
   });
 });
 
@@ -35,7 +37,17 @@ authRouterView.post(
 
 authRouterView.get("/logout", (req, res) => {
   req.session.destroy();
-	res.redirect('/auth/login');
+  res.redirect("/auth/login");
 });
+
+authRouterView.get("/github", passport.authenticate("github"));
+
+authRouterView.get(
+  "/github/callback",
+  passport.authenticate("github", { failureRedirect: "/auth/login" }),
+  (req, res) => {
+    res.redirect("/products"); // Cambia esta URL según tus necesidades
+  }
+);
 
 export default authRouterView;
