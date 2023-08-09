@@ -10,6 +10,7 @@ const productsRouterView = Router();
  */
 productsRouterView.get("/", async (req, res) => {
   try {
+    console.log("Ruta anterior", req);
     const products = await product.getAllOutFilter();
     return res.render("products", {
       products,

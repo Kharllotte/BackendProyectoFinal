@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
 }
 
@@ -27,8 +27,8 @@ header h1 {
 /* Estilos para el contador de artículos en el carrito */
 #cart-counter {
   position: absolute;
-  top: 9px;
-  right: 3px;
+  top: -7px;
+  right: -8px;
   background-color: red;
   color: #fff;
   font-size: 12px;
@@ -42,5 +42,19 @@ header h1 {
 
 .home {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
+}
+
+.btn-header.content-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#cart-button {
+  position: relative;
+}
+
+.user-login {
+  color: white;
 }

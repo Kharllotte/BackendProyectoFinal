@@ -13,12 +13,17 @@ import * as http from "http";
 
 import handlebars from "express-handlebars";
 import Handlebars from "handlebars";
-import { allowInsecurePrototypeAccess } from '@handlebars/allow-prototype-access';
+import { allowInsecurePrototypeAccess } from "@handlebars/allow-prototype-access";
 
 import session from "express-session";
 import morgan from "morgan";
 
 import chatRouter from "./routes/chat.routes.js";
+import authRouterView from "./routes/views/auth.routes.js";
+
+//passport
+import initializePassport from "./config/passport.js";
+import passport from "passport";
 
 // save express framework
 const app = express();
@@ -52,18 +57,37 @@ app.use(
     }),
     secret: "lilianaforero",
     resave: false,
-    saveUninitialized: false,
+    saveUninitialized: true,
   })
 );
+
+// Inicialize passport
+initializePassport();
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use((req, res, next) => {
+  res.locals.userIsAuthenticated = req.isAuthenticated();
+  next();
+});
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 // config handlebars
-app.engine("handlebars", handlebars.engine({
-  handlebars: allowInsecurePrototypeAccess(Handlebars)
-}));
+app.engine(
+  "handlebars",
+  handlebars.engine({
+    handlebars: allowInsecurePrototypeAccess(Handlebars),
+    helpers: {
+      jsonify: function (context) {
+        return JSON.stringify(context);
+      },
+    },
+  })
+);
 app.set("view engine", "handlebars");
 app.set("views", `${__dirname}/views`);
 
@@ -77,6 +101,7 @@ app.use("/api/carts", cartRouter);
 //web
 app.use("/chat", chatRouter);
 app.use("/products", productsRouterView);
+app.use("/auth", authRouterView);
 
 // config port
 const port = env.PORT;

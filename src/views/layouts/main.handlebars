@@ -16,9 +16,20 @@
       <a class="home" href="/products">
         <h1>Mi Tienda</h1>
       </a>
-      <div id="cart-button" class="cart-button">
-        <i class="fas fa-shopping-cart"></i>
-        <span id="cart-counter">0</span>
+      <div class="btn-header content-buttons">
+        <div id="cart-button" class="cart-button">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-counter">0</span>
+        </div>
+        {{#if userIsAuthenticated}}
+        <daiv class="logout" id="btn-logout">
+          <i class="logout fa-solid fa-right-from-bracket"></i>
+        </div>
+        {{else}}
+        <a href="/auth/login" class="user-login">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        {{/if}}
       </div>
     </header>
     {{>cart}}

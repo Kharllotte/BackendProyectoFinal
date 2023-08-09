@@ -1,4 +1,3 @@
-// Ejemplo de solicitud GET usando Axios
 const _idCart = localStorage.getItem("_idCart");
 
 if (!_idCart) {
@@ -13,13 +12,22 @@ if (!_idCart) {
     });
 } else {
   axios
-  .get(`/api/carts/${_idCart}`)
-  .then((response) => {
-    localStorage.setItem("cart", JSON.stringify(response.data.payload.products));
-    const cartCounter = document.getElementById("cart-counter");
-    cartCounter.innerText = response.data.payload.products.length.toString();
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
+    .get(`/api/carts/${_idCart}`)
+    .then((response) => {
+      localStorage.setItem(
+        "cart",
+        JSON.stringify(response.data.payload.products)
+      );
+      const cartCounter = document.getElementById("cart-counter");
+      cartCounter.innerText = response.data.payload.products.length.toString();
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
+
+document.addEventListener("click", (e) => {
+  if (e.target.matches(".logout")) {
+    location.href = "/auth/logout";
+  }
+});
