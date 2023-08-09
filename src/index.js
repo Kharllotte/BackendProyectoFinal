@@ -68,9 +68,12 @@ app.use(passport.session());
 
 app.use((req, res, next) => {
   res.locals.userIsAuthenticated = req.isAuthenticated();
+
+  let cart = null;
+  if (req.isAuthenticated()) cart = req.user.cart;
+  res.locals.cart = cart;
   next();
 });
-
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

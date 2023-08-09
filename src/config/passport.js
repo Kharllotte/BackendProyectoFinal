@@ -3,8 +3,10 @@ import local from "passport-local";
 import { createHash, isValidPassword } from "../utils/index.js";
 import userModel from "../dao/models/mongodb/user.js";
 import { Strategy as GitHubStrategy } from "passport-github2";
+import cartsManager from "../dao/managers/mongodb/carts.js";
 
 const LocalStrategy = local.Strategy;
+const carts = new cartsManager();
 
 const initializePassport = () => {
   passport.use(
@@ -20,12 +22,15 @@ const initializePassport = () => {
             return done(null, false);
           }
 
+          const cart = await createCart();
+
           const newUser = {
             firstName,
             lastName,
             email,
             age,
             password: createHash(password),
+            cart,
           };
           const result = await userModel.create(newUser);
           return done(null, result);
@@ -42,7 +47,9 @@ const initializePassport = () => {
       { usernameField: "email" },
       async (email, password, done) => {
         try {
-          const user = await userModel.findOne({ email });
+          const user = await userModel
+            .findOne({ email })
+            .populate("cart.carts");
           if (!user) {
             console.log("User no found");
             done(null, false);
@@ -69,18 +76,21 @@ const initializePassport = () => {
       },
       async (accessToken, refreshToken, profile, done) => {
         const email = profile.emails[0].value;
-        let user = await userModel.findOne({ email });
-        if(!user) {
+        let user = await userModel.findOne({ email }).populate("cart.carts");
+
+        if (!user) {
+          const cart = await createCart();
           const newUser = {
             firstName: profile.displayName,
-            lastName: '',
+            lastName: "",
             email,
             age: -1,
             password: null,
+            cart,
           };
           user = await userModel.create(newUser);
         }
-        
+
         return done(null, user);
       }
     )
@@ -91,9 +101,16 @@ const initializePassport = () => {
   });
 
   passport.deserializeUser(async (_id, done) => {
-    const user = userModel.findById(_id);
+    const user = await userModel.findById(_id).populate("cart.carts");
     done(null, user);
   });
+};
+
+const createCart = async () => {
+  const query = {
+    products: [],
+  };
+  return await carts.save(query);
 };
 
 export const authorization = (rol) => {

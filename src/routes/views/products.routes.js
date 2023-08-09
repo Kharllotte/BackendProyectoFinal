@@ -1,16 +1,18 @@
 import { Router } from "express";
 import productManager from "../../dao/managers/mongodb/products.js";
 
+import authMiddleware from '../../helpers/auth.js'
+
 const product = new productManager();
+
 const productsRouterView = Router();
 
 /**
  * Metodo para obtener los productos con filtros opcionales de:
  * page, limit, category, title (q), price y sort.
  */
-productsRouterView.get("/", async (req, res) => {
+productsRouterView.get("/", authMiddleware.isLoggedIn, async (req, res) => {
   try {
-    console.log("Ruta anterior", req);
     const products = await product.getAllOutFilter();
     return res.render("products", {
       products,
