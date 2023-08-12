@@ -4,6 +4,7 @@ import { createHash, isValidPassword } from "../utils/index.js";
 import userModel from "../dao/models/mongodb/user.js";
 import { Strategy as GitHubStrategy } from "passport-github2";
 import cartsManager from "../dao/managers/mongodb/carts.js";
+import env from "../config/env.js";
 
 const LocalStrategy = local.Strategy;
 const carts = new cartsManager();
@@ -69,8 +70,8 @@ const initializePassport = () => {
   passport.use(
     new GitHubStrategy(
       {
-        clientID: "f2b4d13e9113a017b62b",
-        clientSecret: "2bf1a21b76f4182422d6a5d70db2f0256fa8ea34",
+        clientID: env.CLIENT_ID,
+        clientSecret: env.CLIENT_SECRET,
         scope: ["user:email"],
         callbackURL: "/auth/github/callback",
       },
