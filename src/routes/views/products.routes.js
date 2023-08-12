@@ -1,7 +1,7 @@
 import { Router } from "express";
 import productManager from "../../dao/managers/mongodb/products.js";
 
-import authMiddleware from '../../helpers/auth.js'
+import authMiddleware from "../../helpers/auth.js";
 
 const product = new productManager();
 
@@ -22,7 +22,7 @@ productsRouterView.get("/", authMiddleware.isLoggedIn, async (req, res) => {
   }
 });
 
-productsRouterView.get("/:id", async (req, res) => {
+productsRouterView.get("/:id", authMiddleware.isLoggedIn, async (req, res) => {
   try {
     const id = req.params.id;
     const getProduct = await product.getById(id);
@@ -33,5 +33,47 @@ productsRouterView.get("/:id", async (req, res) => {
     console.log(error);
   }
 });
+
+productsRouterView.post("/add", authMiddleware.isAdmin, async (req, res) => {
+  try {
+    const payload = req.body;
+    await product.add(payload);
+    return res.redirect("/products");
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+productsRouterView.post("/update", authMiddleware.isAdmin, async (req, res) => {
+  try {
+    const payload = req.body;
+    await product.update(payload);
+    return res.redirect("/products");
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+productsRouterView.post(
+  "/inactive/:id",
+  authMiddleware.isAdmin,
+  async (req, res) => {
+    try {
+      const id = req.params.id;
+      const getProduct = await product.getById(id);
+      if (!getProduct) throw "Product not found";
+
+      getProduct.active = false;
+      await getProduct.save();
+
+      return res.json({
+        success: true,
+        payload: getProduct,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
 
 export default productsRouterView;

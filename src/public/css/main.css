@@ -58,3 +58,77 @@ header h1 {
 .user-login {
   color: white;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+button.trash {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+  padding: 1px 6px;
+}
+
+button.trash:hover {
+  color: #ac2636ce;
+}
+
+button.edit {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+  padding: 1px 6px;
+}
+
+button.edit:hover {
+  color: #268bac;
+}
+
+button.add-to-cart {
+  background-color: transparent;
+  border: none;
+  padding: 1px 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+button.add-to-cart:hover {
+  color: #45a049;
+}
+
+a.see {
+  text-decoration: none;
+  color: black;
+  padding: 1px 6px;
+  transition: color 0.2s;
+}
+
+a.see:hover {
+  color: #007bff;
+}
+
+.m-0 {
+  margin: 0;
+}

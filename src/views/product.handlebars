@@ -8,12 +8,13 @@
   <p><strong>Stock:</strong> {{product.stock}}</p>
 </div>
 
-<div class="add-to-cart-container">
-  <button class="add-to-cart" data-id="{{product._id}}">Agregar al carrito</button>
-</div>
+{{#unless isAdmin}}
+  <script src="/js/addCart.js"></script>
+  <div class="add-to-cart-container">
+    <button class="add add-to-cart" data-id="{{product._id}}">Agregar al carrito</button>
+  </div>
+{{/unless}}
 
 <div class="add-to-cart-container">
   <a href="/products">Volver</a>
 </div>
-
-<script src="/js/addCart.js"></script>

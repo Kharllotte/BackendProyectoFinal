@@ -33,7 +33,7 @@ export default class productManager {
   };
 
   getAllOutFilter = async () => {
-    const products = await ProductModel.find();
+    const products = await ProductModel.find({ active: true });
     return products;
   };
 
@@ -45,6 +45,67 @@ export default class productManager {
     } catch (err) {
       console.log("Failed get product");
       console.log(err);
+    }
+  };
+
+  add = async (product) => {
+    try {
+      const exist = await ProductModel.find({
+        $or: [
+          {
+            title: product.productName,
+          },
+          {
+            code: product.productCode,
+          },
+        ],
+      });
+
+      if (exist.length > 0) {
+        console.log(exist);
+        throw "Already product exist";
+      }
+
+      const newProduct = {
+        id: `${product.productName}${product.productCode}`,
+        title: product.productName,
+        description: product.productDescription,
+        price: product.productPrice,
+        code: product.productCode,
+        stock: product.productStock,
+        category: product.productCategory,
+        active: true,
+      };
+
+      const result = await ProductModel.create(newProduct);
+      console.log("Product saved");
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  update = async (product) => {
+    try {
+      const newProduct = {
+        title: product.productName,
+        description: product.productDescription,
+        price: product.productPrice,
+        code: product.productCode,
+        stock: product.productStock,
+        category: product.productCategory,
+        active: true,
+      };
+
+      let result = await ProductModel.findByIdAndUpdate(
+        { _id: product._id},
+        newProduct
+      );
+
+      console.log("Product updated");
+      return result;
+    } catch (error) {
+      console.log(error);
     }
   };
 }

@@ -16,18 +16,3 @@
   justify-content: center;
   margin-top: 20px;
 }
-
-button.add-to-cart {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: background-color 0.2s;
-}
-
-button.add-to-cart:hover {
-  background-color: #45a049;
-}

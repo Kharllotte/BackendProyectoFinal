@@ -1,7 +1,7 @@
 const d = document;
 
 d.addEventListener("click", async (e) => {
-  if (e.target.matches(".add-to-cart")) {
+  if (e.target.matches(".add")) {
     const _idProduct = e.target.dataset.id;
     const _idCart = localStorage.getItem("_idCart");
     const cart = localStorage.getItem("cart");
@@ -22,10 +22,15 @@ d.addEventListener("click", async (e) => {
       .then((response) => {
         const amount = response.data.payload.products.length;
         updateCartCounter(amount);
-        localStorage.setItem("cart", JSON.stringify(response.data.payload.products));
+        localStorage.setItem(
+          "cart",
+          JSON.stringify(response.data.payload.products)
+        );
       })
       .catch((error) => {
         console.error("Error:", error);
+        if (error.response.data.payload == "No stock")
+          alert("No hay suficiente stock para agregar al carrito");
       });
   }
 });

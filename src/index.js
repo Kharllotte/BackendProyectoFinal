@@ -72,6 +72,14 @@ app.use((req, res, next) => {
   let cart = null;
   if (req.isAuthenticated()) cart = req.user.cart;
   res.locals.cart = cart;
+
+  let isAdmin = null;
+  if (req.isAuthenticated()) isAdmin = req.user.role === "admin";
+  res.locals.isAdmin = isAdmin;
+
+  let user = null;
+  if (req.isAuthenticated()) user = req.user;
+  res.locals.user = user;
   next();
 });
 

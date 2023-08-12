@@ -3,7 +3,13 @@ const popup = document.getElementById("popup");
 const closeButton = document.getElementById("close-button");
 const cartItemsList = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
-
+const purcharseBtn = document.getElementById("purchase-button");
+const before = document.getElementById("before");
+const after = document.getElementById("after");
+const bill = document.getElementById("bill");
+const loader = document.getElementById("loader");
+const productsNoFound = document.getElementById("productsNoFound");
+const listProductsNoFound = document.getElementById("listProductsNoFound");
 // Función para abrir el popup
 function openPopup() {
   const idCart = localStorage.getItem("_idCart");
@@ -35,7 +41,7 @@ document.addEventListener("click", (e) => {
   if (e.target.matches(".action-cart")) {
     const action = e.target.dataset.action;
     const _idProduct = e.target.dataset.id;
-    
+
     const idCart = localStorage.getItem("_idCart");
 
     if (action === "minus" || action === "plus") {
@@ -52,6 +58,8 @@ document.addEventListener("click", (e) => {
         })
         .catch((error) => {
           console.error("Error:", error);
+          if (error.response.data.payload == "No stock")
+            alert("No hay suficiente stock para agregar al carrito");
         });
     } else {
       axios
@@ -65,6 +73,52 @@ document.addEventListener("click", (e) => {
         });
     }
   }
+
+  if (e.target.matches("#acept")) {
+    window.location.reload();
+  }
+});
+
+purcharseBtn.addEventListener("click", (e) => {
+  before.classList.add("d-none");
+  loader.classList.remove("d-none");
+
+  const idCart = localStorage.getItem("_idCart");
+
+  axios
+    .post(`/api/carts/${idCart}/purchase`)
+    .then((response) => {
+      loader.classList.add("d-none");
+      const salesCheck = response.data.payload;
+      after.classList.remove("d-none");
+      if (salesCheck) {
+        document.getElementById("code").textContent = salesCheck.code;
+        document.getElementById("amount").textContent = "$" + salesCheck.amount;
+        document.getElementById("date").textContent =
+          salesCheck.purchaseDateTime;
+        bill.classList.remove("d-none");
+      }
+
+      const productsNoStock = response.data.productsNoStock;
+      if (productsNoStock.length > 0) {
+        productsNoFound.classList.remove("d-none");
+        listProductsNoFound.innerHTML = "";
+        productsNoStock.forEach((item) => {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>${item.title}</td>
+            <td>${item.stock}</td>
+            <td>No Stock</td>
+            `;
+          listProductsNoFound.appendChild(tr);
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      if (error.response.data.payload == "No stock")
+        alert("No hay suficiente stock para agregar al carrito");
+    });
 });
 
 function displayProducts(products) {
@@ -72,6 +126,14 @@ function displayProducts(products) {
   const cartCounter = document.getElementById("cart-counter");
   cartCounter.innerText = products.length.toString();
   const total = sumPrices(products);
+
+  if (total > 0) {
+    purcharseBtn.classList.remove("d-none");
+    purcharseBtn.classList.add("d-block");
+  } else {
+    purcharseBtn.classList.remove("d-block");
+    purcharseBtn.classList.add("d-none");
+  }
 
   cartItemsList.innerHTML = "";
   products.forEach((item) => {

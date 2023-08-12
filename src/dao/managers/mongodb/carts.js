@@ -28,19 +28,19 @@ export default class CartManagerM {
 
       const product = await products.getById(pid);
 
-      console.log(product);
-
       if (!product) {
         console.log("No existe el producto");
         return;
+      }
+
+      if (product.stock < 1) {
+        return "No stock";
       }
 
       const query = {
         productId: product,
         amount: 1,
       };
-
-      console.log(query);
 
       cart.products.push(query);
 
@@ -106,8 +106,12 @@ export default class CartManagerM {
 
   getById = async (id) => {
     try {
-      const cart = await CartModel.findOne({ _id: id }).populate(
-        "products.productId"
+      const cart = await CartModel.findOne({ _id: id })
+        .populate({ path: "products.productId", match: { active: true } })
+        .exec();
+
+      cart.products = cart.products.filter(
+        (product) => product.productId !== null
       );
       console.log("Get cart");
       return cart;
@@ -129,7 +133,13 @@ export default class CartManagerM {
 
       if (productIndex === -1) {
         console.log("El producto no se encuentra en el carrito.");
-        return;
+        return null;
+      }
+
+      const stock = cart.products[productIndex].productId.stock;
+
+      if (stock < amount) {
+        return "No stock";
       }
 
       cart.products[productIndex].amount = amount;
