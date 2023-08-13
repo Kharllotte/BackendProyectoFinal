@@ -34,28 +34,39 @@ productsRouterView.get("/:id", authMiddleware.isLoggedIn, async (req, res) => {
   }
 });
 
-productsRouterView.post("/add", authMiddleware.isAdmin, async (req, res) => {
-  try {
-    const payload = req.body;
-    await product.add(payload);
-    return res.redirect("/products");
-  } catch (error) {
-    console.log(error);
+productsRouterView.post(
+  "/add",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isAdmin,
+  async (req, res) => {
+    try {
+      const payload = req.body;
+      await product.add(payload);
+      return res.redirect("/products");
+    } catch (error) {
+      console.log(error);
+    }
   }
-});
+);
 
-productsRouterView.post("/update", authMiddleware.isAdmin, async (req, res) => {
-  try {
-    const payload = req.body;
-    await product.update(payload);
-    return res.redirect("/products");
-  } catch (error) {
-    console.log(error);
+productsRouterView.post(
+  "/update",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isAdmin,
+  async (req, res) => {
+    try {
+      const payload = req.body;
+      await product.update(payload);
+      return res.redirect("/products");
+    } catch (error) {
+      console.log(error);
+    }
   }
-});
+);
 
 productsRouterView.post(
   "/inactive/:id",
+  authMiddleware.isLoggedIn,
   authMiddleware.isAdmin,
   async (req, res) => {
     try {

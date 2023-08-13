@@ -15,7 +15,7 @@ export default class Messages {
   };
 
   getAll = async () => {
-    const result = await messageModel.find();
+    const result = await messageModel.find().populate('user');
     console.log("Messages get all successfull");
     return result;
   };

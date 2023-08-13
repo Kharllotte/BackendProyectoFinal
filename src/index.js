@@ -9,6 +9,9 @@ import messageManager from "./dao/managers/mongodb/messages.js";
 import connectMongoDB from "connect-mongo";
 import __dirname from "./utils/index.js";
 
+import passportSocketIo from "passport.socketio";
+import cookieParser from "cookie-parser";
+
 import * as http from "http";
 
 import handlebars from "express-handlebars";
@@ -49,12 +52,14 @@ await mongoose
 const message = new messageManager();
 
 // config mongodb
+const store = connectMongoDB.create({
+  mongoUrl: env.MONGO_URL,
+  ttl: 3600,
+});
+
 app.use(
   session({
-    store: connectMongoDB.create({
-      mongoUrl: env.MONGO_URL,
-      ttl: 3600,
-    }),
+    store,
     secret: "lilianaforero",
     resave: false,
     saveUninitialized: true,
@@ -120,17 +125,67 @@ server.listen(port, () => {
   console.log(`SERVER ON PORT: ${port}`);
 });
 
+io.use(
+  passportSocketIo.authorize({
+    cookieParser,
+    key: "connect.sid", // El nombre de la cookie de sesión
+    secret: "lilianaforero",
+    store, // Reemplaza esto con tu propio almacenamiento de sesiones
+  })
+);
+
+let connectedUsers = 0;
+
 // config socket
 io.on("connection", (socket) => {
   console.log("Nuevo usuario conectado", socket.id);
 
+  connectedUsers++;
+  io.emit("userCount", connectedUsers);
+
   socket.on("newUser", (user) => {
-    console.log(`> ${user} ha iniciado sesion`);
+    io.emit("currentUser", socket.request.user);
+  });
+
+  socket.on("chat:open", async () => {
+    io.emit("currentUser", socket.request.user);
+    const allMessages = await message.getAll();
+    const messages = allMessages.map((m) => {
+      return {
+        user: {
+          _id: m.user._id,
+          firstName: m.user.firstName,
+          lastName: m.user.lastName,
+          email: m.user.email,
+        },
+        message: m.message,
+        date: m.date,
+      };
+    });
+    io.emit("messages", messages);
   });
 
   socket.on("chat:message", async (msg) => {
+    const user = socket.request.user;
+    msg = {
+      user: user._id,
+      message: msg.message,
+    };
     await message.save(msg);
-    io.emit("messages", await message.getAll());
+    const allMessages = await message.getAll();
+    const messages = allMessages.map((m) => {
+      return {
+        user: {
+          _id: m.user._id,
+          firstName: m.user.firstName,
+          lastName: m.user.lastName,
+          email: m.user.email,
+        },
+        message: m.message,
+        date: m.date,
+      };
+    });
+    io.emit("messages", messages);
   });
 
   socket.on("newUser", (user) => {
@@ -142,6 +197,8 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", () => {
+    connectedUsers--;
     console.log("usuario desconectado", socket.id);
+    io.emit("userCount", connectedUsers);
   });
 });

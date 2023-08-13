@@ -34,10 +34,4 @@ window.onload = () => {
         console.error("Error:", error);
       });
   }
-
-  document.addEventListener("click", (e) => {
-    if (e.target.matches(".logout")) {
-      location.href = "/auth/logout";
-    }
-  });
 };

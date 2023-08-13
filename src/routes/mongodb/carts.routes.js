@@ -22,36 +22,47 @@ cartsRouter.get("/", async (req, res) => {
   }
 });
 
-cartsRouter.get("/:cid", authMiddleware.isUser, async (req, res) => {
-  try {
-    const cid = req.params.cid;
-    const cart = await carts.getById(cid);
-    return res.json({
-      result: "success",
-      payload: cart,
-    });
-  } catch (error) {
-    console.log(error);
+cartsRouter.get(
+  "/:cid",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isUser,
+  async (req, res) => {
+    try {
+      const cid = req.params.cid;
+      const cart = await carts.getById(cid);
+      return res.json({
+        result: "success",
+        payload: cart,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
-});
+);
 
 //Crear carrito con productos
-cartsRouter.post("/", authMiddleware.isUser, async (req, res) => {
-  try {
-    const query = {
-      products: [],
-    };
-    const result = await carts.save(query);
-    return res.status(201).json({ result: "succes", payload: result });
-  } catch (err) {
-    console.log("no es posible acceder a la ruta");
-    console.log(err);
+cartsRouter.post(
+  "/",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isUser,
+  async (req, res) => {
+    try {
+      const query = {
+        products: [],
+      };
+      const result = await carts.save(query);
+      return res.status(201).json({ result: "succes", payload: result });
+    } catch (err) {
+      console.log("no es posible acceder a la ruta");
+      console.log(err);
+    }
   }
-});
+);
 
 // Agregar un producto en el carrito
 cartsRouter.post(
   "/:cid/products/:pid",
+  authMiddleware.isLoggedIn,
   authMiddleware.isUser,
   async (req, res) => {
     try {
@@ -73,6 +84,7 @@ cartsRouter.post(
 // Actualizar la cantidad de productos en el carrito
 cartsRouter.put(
   "/:cid/products/:pid",
+  authMiddleware.isLoggedIn,
   authMiddleware.isUser,
   async (req, res) => {
     try {
@@ -97,6 +109,7 @@ cartsRouter.put(
 // Borrar un producto especifico del carrito
 cartsRouter.delete(
   "/:cid/products/:pid",
+  authMiddleware.isLoggedIn,
   authMiddleware.isUser,
   async (req, res) => {
     try {
@@ -134,72 +147,77 @@ cartsRouter.delete("/:cid/empty", async (req, res) => {
 });
 
 // Facturar
-cartsRouter.post("/:cid/purchase", authMiddleware.isUser, async (req, res) => {
-  try {
-    const cid = req.params.cid;
-    const cart = await carts.getById(cid);
+cartsRouter.post(
+  "/:cid/purchase",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isUser,
+  async (req, res) => {
+    try {
+      const cid = req.params.cid;
+      const cart = await carts.getById(cid);
 
-    const productsNoStock = [];
-    const productsNoStockCart = { products: [] };
-    let amount = 0;
+      const productsNoStock = [];
+      const productsNoStockCart = { products: [] };
+      let amount = 0;
 
-    if (!cart) {
-      return res.json({
-        result: "false",
-        payload: cart,
-        message: "Cart no found",
-      });
-    }
-
-    const products = cart.products;
-    for (const product of products) {
-      if (product.productId.stock < product.amount) {
-        productsNoStock.push(product.productId);
-        productsNoStockCart.products.push({
-          productId: product.productId._id,
-          amount: product.amount,
+      if (!cart) {
+        return res.json({
+          result: "false",
+          payload: cart,
+          message: "Cart no found",
         });
-      } else {
-        product.productId.stock -= product.amount;
-        await product.productId.save();
-        amount += product.productId.price * product.amount;
       }
-    }
 
-    if (amount < 1) {
+      const products = cart.products;
+      for (const product of products) {
+        if (product.productId.stock < product.amount) {
+          productsNoStock.push(product.productId);
+          productsNoStockCart.products.push({
+            productId: product.productId._id,
+            amount: product.amount,
+          });
+        } else {
+          product.productId.stock -= product.amount;
+          await product.productId.save();
+          amount += product.productId.price * product.amount;
+        }
+      }
+
+      if (amount < 1) {
+        return res.json({
+          result: "false",
+          payload: null,
+          productsNoStock,
+          newCart: null,
+        });
+      }
+
+      const newTicket = {
+        code: await generateCode(),
+        purcharseDataTime: new Date(),
+        amount,
+        purcharser: req.user.email,
+        idCart: cid,
+      };
+
+      const tk = await tickets.save(newTicket);
+
+      const newCart = await carts.save(productsNoStockCart);
+
+      req.user.cart = newCart._id;
+      await req.user.save();
+
       return res.json({
-        result: "false",
-        payload: null,
+        result: "true",
+        payload: tk,
         productsNoStock,
-        newCart: null,
+        newCart,
       });
+    } catch (error) {
+      console.log(error);
     }
-
-    const newTicket = {
-      code: await generateCode(),
-      purcharseDataTime: new Date(),
-      amount,
-      purcharser: req.user.email,
-      idCart: cid,
-    };
-
-    const tk = await tickets.save(newTicket);
-
-    const newCart = await carts.save(productsNoStockCart);
-
-    req.user.cart = newCart._id;
-    await req.user.save();
-
-    return res.json({
-      result: "true",
-      payload: tk,
-      productsNoStock,
-      newCart,
-    });
-  } catch (error) {
-    console.log(error);
   }
-});
+);
 
 const generateCode = async () => {
   const code = generateCodeToken();

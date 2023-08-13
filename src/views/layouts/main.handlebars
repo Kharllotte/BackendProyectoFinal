@@ -28,7 +28,7 @@
         <script src="/js/main.js"></script>
         {{/unless}}
         {{#if userIsAuthenticated}}
-        <daiv class="logout" id="btn-logout">
+        <div class="logout" id="btn-logout">
           <i class="logout fa-solid fa-right-from-bracket"></i>
         </div>
         {{else}}
@@ -44,4 +44,11 @@
     {{/unless}}
     {{{body}}}
   </body>
+  <script>
+    document.addEventListener("click", (e) => {
+      if (e.target.matches(".logout")) {
+        location.href = "/auth/logout";
+      }
+  });
+  </script>
 </html>

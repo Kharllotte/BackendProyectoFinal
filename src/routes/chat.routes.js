@@ -3,7 +3,7 @@ import authMiddleware from "../helpers/auth.js";
 
 const router = Router();
 
-router.get("/", authMiddleware.isUser, async (req, res) => {
+router.get("/", authMiddleware.isLoggedIn, authMiddleware.isUser, async (req, res) => {
   res.render("chat");
 });
 
