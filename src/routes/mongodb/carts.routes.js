@@ -3,6 +3,7 @@ import cartsManager from "../../dao/managers/mongodb/carts.js";
 import { generateCodeToken } from "../../utils/index.js";
 import TicketsManager from "../../dao/managers/mongodb/tickets.js";
 import authMiddleware from "../../helpers/auth.js";
+import nodemailer from "nodemailer";
 
 const carts = new cartsManager();
 const tickets = new TicketsManager();
@@ -207,6 +208,8 @@ cartsRouter.post(
       req.user.cart = newCart._id;
       await req.user.save();
 
+      await sendEmail()
+
       return res.json({
         result: "true",
         payload: tk,
@@ -218,6 +221,30 @@ cartsRouter.post(
     }
   }
 );
+
+async function sendEmail() {
+  const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'camilohamonserna@gmail.com',
+      pass: 'ntmuaoblmgrwuzra',
+    },
+  });
+
+  const mailOptions = {
+    from: 'camilohamonserna@gmail.com',
+    to: 'camilohamonserna@gmail.com',
+    subject: 'Asunto del correo',
+    text: 'Contenido del correo',
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Correo electrónico enviado:', info.response);
+  } catch (error) {
+    console.error('Error al enviar el correo:', error);
+  }
+}
 
 const generateCode = async () => {
   const code = generateCodeToken();
