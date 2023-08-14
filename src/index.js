@@ -9,6 +9,8 @@ import messageManager from "./dao/managers/mongodb/messages.js";
 import connectMongoDB from "connect-mongo";
 import __dirname from "./utils/index.js";
 
+import errorHandler from "./middleware.errors/index.js";
+
 import passportSocketIo from "passport.socketio";
 import cookieParser from "cookie-parser";
 
@@ -27,6 +29,8 @@ import authRouterView from "./routes/views/auth.routes.js";
 //passport
 import initializePassport from "./config/passport.js";
 import passport from "passport";
+import compression from "express-compression";
+import productsMock from "./routes/mongodb/products.mock.routes.js";
 
 // save express framework
 const app = express();
@@ -56,6 +60,12 @@ const store = connectMongoDB.create({
   mongoUrl: env.MONGO_URL,
   ttl: 3600,
 });
+
+app.use(
+  compression({
+    brotli: { enabled: true, zlig: {} },
+  })
+);
 
 app.use(
   session({
@@ -118,6 +128,11 @@ app.use("/api/carts", cartRouter);
 app.use("/chat", chatRouter);
 app.use("/products", productsRouterView);
 app.use("/auth", authRouterView);
+
+// Mocking
+app.use("/mockingproducts", productsMock);
+
+app.use(errorHandler);
 
 // config port
 const port = env.PORT;
