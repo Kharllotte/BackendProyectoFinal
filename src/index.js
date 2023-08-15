@@ -122,8 +122,8 @@ app.use("/", express.static(__dirname + "/public"));
 
 // -- routes
 // apis
-app.use("/api/products", productRouter);
 app.use("/api/carts", cartRouter);
+app.use("/api/products", productRouter);
 //web
 app.use("/chat", chatRouter);
 app.use("/products", productsRouterView);
@@ -133,6 +133,8 @@ app.use("/auth", authRouterView);
 app.use("/mockingproducts", productsMock);
 
 app.use(errorHandler);
+
+app.use('/', (req, res) => res.redirect('/products'));
 
 // config port
 const port = env.PORT;

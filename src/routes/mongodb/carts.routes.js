@@ -4,6 +4,7 @@ import { generateCodeToken } from "../../utils/index.js";
 import TicketsManager from "../../dao/managers/mongodb/tickets.js";
 import authMiddleware from "../../helpers/auth.js";
 import nodemailer from "nodemailer";
+import helperMain from "../../helpers/index.js";
 
 const carts = new cartsManager();
 const tickets = new TicketsManager();
@@ -158,6 +159,7 @@ cartsRouter.post(
       const cart = await carts.getById(cid);
 
       const productsNoStock = [];
+      const productsBuy = [];
       const productsNoStockCart = { products: [] };
       let amount = 0;
 
@@ -181,6 +183,10 @@ cartsRouter.post(
           product.productId.stock -= product.amount;
           await product.productId.save();
           amount += product.productId.price * product.amount;
+          productsBuy.push({
+            product: product.productId,
+            amount: product.amount,
+          });
         }
       }
 
@@ -208,7 +214,7 @@ cartsRouter.post(
       req.user.cart = newCart._id;
       await req.user.save();
 
-      await sendEmail()
+      await sendEmail(productsBuy, tk);
 
       return res.json({
         result: "true",
@@ -222,27 +228,46 @@ cartsRouter.post(
   }
 );
 
-async function sendEmail() {
+async function sendEmail(products, ticket) {
   const transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: "Gmail",
     auth: {
-      user: 'camilohamonserna@gmail.com',
-      pass: 'ntmuaoblmgrwuzra',
+      user: process.env.EMAIL,
+      pass: process.env.EMAIL_TOKEN,
     },
   });
 
+  let productsBuy = "";
+  products.forEach((p) => {
+    productsBuy += `
+    <div>
+      Producto: ${p.product.title}, precio: $${p.product.price}
+    </div>
+    `;
+  });
+
+  const html = `
+    <div>
+      <small>Fecha: ${helperMain.formatDate(ticket.purchaseDateTime)}</small>
+      <h3>Factura - Codigo: ${ticket.code}</h3>
+      ${productsBuy}
+      <br>
+      <div>Total: $${ticket.amount}</div>
+    </div>
+  `;
+
   const mailOptions = {
-    from: 'camilohamonserna@gmail.com',
-    to: 'camilohamonserna@gmail.com',
-    subject: 'Asunto del correo',
-    text: 'Contenido del correo',
+    from: "lilikathe99@gmail.com",
+    to: "camilohamonserna@gmail.com",
+    subject: "Asunto del correo",
+    html,
   };
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log('Correo electrónico enviado:', info.response);
+    console.log("Correo electrónico enviado:", info.response);
   } catch (error) {
-    console.error('Error al enviar el correo:', error);
+    console.error("Error al enviar el correo:", error);
   }
 }
 
