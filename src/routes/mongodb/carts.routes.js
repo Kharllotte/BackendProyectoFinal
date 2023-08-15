@@ -214,7 +214,7 @@ cartsRouter.post(
       req.user.cart = newCart._id;
       await req.user.save();
 
-      await sendEmail(productsBuy, tk);
+      await sendEmail(productsBuy, tk, req.user.email);
 
       return res.json({
         result: "true",
@@ -228,7 +228,7 @@ cartsRouter.post(
   }
 );
 
-async function sendEmail(products, ticket) {
+async function sendEmail(products, ticket, user) {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
@@ -258,7 +258,7 @@ async function sendEmail(products, ticket) {
 
   const mailOptions = {
     from: "lilikathe99@gmail.com",
-    to: "camilohamonserna@gmail.com",
+    to: user,
     subject: "Asunto del correo",
     html,
   };
