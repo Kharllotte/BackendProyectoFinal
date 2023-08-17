@@ -48,3 +48,61 @@
 2023-08-17T01:33:24.124Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
 2023-08-17T01:33:38.305Z [[32minfo[39m]: [32mDB CONNECTED[39m
 2023-08-17T01:33:38.320Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-17T01:33:51.785Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-17T01:33:51.803Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-17T01:34:16.018Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:17.867Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-17T01:34:21.039Z [[32minfo[39m]: [32mMessage saved[39m
+2023-08-17T01:34:21.049Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-17T01:34:24.728Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:24.752Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:34:24.756Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-17T01:34:25.929Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:25.932Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:34:25.933Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-17T01:34:27.039Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:27.042Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:34:27.043Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-17T01:34:27.886Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:28.949Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:28.976Z [[32minfo[39m]: [32mGet Ticket[39m
+2023-08-17T01:34:28.990Z [[32minfo[39m]: [32mTicket saved[39m
+2023-08-17T01:34:28.993Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-17T01:34:31.436Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-17T01:34:32.712Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:35.223Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:35.226Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:34:35.227Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-17T01:34:36.850Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:34:37.027Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:40.288Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:41.785Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:42.674Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:34:42.682Z [[32minfo[39m]: [32mGet Ticket[39m
+2023-08-17T01:34:42.686Z [[32minfo[39m]: [32mTicket saved[39m
+2023-08-17T01:34:42.689Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-17T01:34:44.370Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-17T01:34:45.426Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:14.686Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:16.625Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:16.628Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:35:16.630Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-17T01:35:17.965Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:17.968Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:35:17.970Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-17T01:35:18.903Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:19.814Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:19.822Z [[32minfo[39m]: [32mGet Ticket[39m
+2023-08-17T01:35:19.825Z [[32minfo[39m]: [32mTicket saved[39m
+2023-08-17T01:35:19.828Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-17T01:35:21.492Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-17T01:35:22.754Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-17T01:35:25.314Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-17T01:35:29.050Z [[32minfo[39m]: [32mMessage saved[39m
+2023-08-17T01:35:29.060Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-17T01:35:42.442Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:35:46.213Z [[32minfo[39m]: [32mProduct updated[39m
+2023-08-17T01:35:50.292Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T01:35:52.695Z [[32minfo[39m]: [32mProduct updated[39m
+2023-08-17T01:36:14.182Z [[32minfo[39m]: [32mProduct saved[39m
+2023-08-17T01:36:16.725Z [[32minfo[39m]: [32mGet product[39m
