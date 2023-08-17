@@ -52,7 +52,6 @@ socket.on("messages", (data) => {
 });
 
 socket.on("newUser", (user) => {
-  console.log(user);
   userConnect.innerHTML += `<li>${user}</li>`;
 });
 

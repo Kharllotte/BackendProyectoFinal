@@ -26,11 +26,14 @@ import morgan from "morgan";
 import chatRouter from "./routes/chat.routes.js";
 import authRouterView from "./routes/views/auth.routes.js";
 
-//passport
+// Passport
 import initializePassport from "./config/passport.js";
 import passport from "passport";
 import compression from "express-compression";
 import productsMock from "./routes/mongodb/products.mock.routes.js";
+
+// Logger
+import logger from "../src/utils/logger/index.js";
 
 // save express framework
 const app = express();
@@ -47,10 +50,10 @@ const mongoUrl = env.MONGO_URL;
 await mongoose
   .connect(mongoUrl)
   .then(() => {
-    console.log("DB CONNECTED");
+    logger.info("DB CONNECTED");
   })
   .catch((e) => {
-    console.log("Error connecting to database");
+    logger.info("Error connecting to database");
   });
 
 const message = new messageManager();
@@ -134,12 +137,12 @@ app.use("/mockingproducts", productsMock);
 
 app.use(errorHandler);
 
-app.use('/', (req, res) => res.redirect('/products'));
+app.use("/", (req, res) => res.redirect("/products"));
 
 // config port
 const port = env.PORT;
 server.listen(port, () => {
-  console.log(`SERVER ON PORT: ${port}`);
+  logger.info(`SERVER ON PORT: ${port}`);
 });
 
 io.use(
@@ -155,7 +158,7 @@ let connectedUsers = 0;
 
 // config socket
 io.on("connection", (socket) => {
-  console.log("Nuevo usuario conectado", socket.id);
+  console.info("Nuevo usuario conectado", socket.id);
 
   connectedUsers++;
   io.emit("userCount", connectedUsers);
@@ -215,7 +218,7 @@ io.on("connection", (socket) => {
 
   socket.on("disconnect", () => {
     connectedUsers--;
-    console.log("usuario desconectado", socket.id);
+    console.info("usuario desconectado", socket.id);
     io.emit("userCount", connectedUsers);
   });
 });

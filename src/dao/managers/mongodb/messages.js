@@ -1,3 +1,4 @@
+import logger from "../../../utils/logger/index.js";
 import { messageModel } from "../../models/mongodb/messages.js";
 
 export default class Messages {
@@ -6,17 +7,17 @@ export default class Messages {
   save = async (obj) => {
     try {
       let result = await messageModel.create(obj);
-      console.log("Message saved");
+      logger.info("Message saved");
       return result;
     } catch (err) {
-      console.log(err);
-      console.log("Failed saved message");
+      logger.error(err);
+      logger.error("Failed saved message");
     }
   };
 
   getAll = async () => {
-    const result = await messageModel.find().populate('user');
-    console.log("Messages get all successfull");
+    const result = await messageModel.find().populate("user");
+    logger.info("Messages get all successfull");
     return result;
   };
 }

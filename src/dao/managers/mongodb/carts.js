@@ -1,6 +1,7 @@
 import productManager from "../mongodb/products.js";
 import { CartModel } from "../../models/mongodb/cart.js";
 import { ProductModel } from "../../models/mongodb/products.js";
+import logger from "../../../utils/logger/index.js";
 
 const products = new productManager();
 
@@ -10,11 +11,11 @@ export default class CartManagerM {
   save = async (cart) => {
     try {
       let result = await CartModel.create(cart);
-      console.log("Cart saved");
+      logger.info("Cart saved");
       return result;
     } catch (error) {
-      console.log(error);
-      console.log("Failed card saved");
+      logger.error(error);
+      logger.error("Failed card saved");
     }
   };
 
@@ -22,18 +23,19 @@ export default class CartManagerM {
     try {
       const cart = await this.getById(cid);
       if (!cart) {
-        console.log("no existe el carrito");
+        logger.warning("Cart no found");
         return;
       }
 
       const product = await products.getById(pid);
 
       if (!product) {
-        console.log("No existe el producto");
+        logger.warning("Product no found");
         return;
       }
 
       if (product.stock < 1) {
+        logger.warning("No stock");
         return "No stock";
       }
 
@@ -44,32 +46,33 @@ export default class CartManagerM {
 
       cart.products.push(query);
 
+      logger.info("Product saved in cart");
       return await cart.save();
     } catch (error) {
-      console.log(error);
-      console.log("Failed card saved");
+      logger.error(error);
+      logger.error("Failed card saved");
     }
   };
 
   get = async () => {
     try {
       const carts = await CartModel.find().populate("products.productId");
-      console.log("Get all success");
+      logger.info("Get all success");
       return carts;
     } catch (err) {
-      console.log("Get all success error");
-      console.log(err);
+      logger.error(err);
+      logger.error("Get all success error");
     }
   };
 
   delete = async (id) => {
     try {
       const result = await CartModel.deleteOne({ _id: id });
-      console.log("Cart deleted");
+      logger.info("Cart deleted");
       return result;
     } catch (error) {
-      console.log("Failed card delete");
-      console.log(error);
+      logger.error("Failed card delete");
+      logger.error(error);
     }
   };
 
@@ -77,15 +80,16 @@ export default class CartManagerM {
     try {
       const result = await this.getById(id);
       if (!result) {
-        console.log("Cart not found");
+        logger.warning("Cart not found");
         return;
       }
 
       result.products = [];
+      logger.info("Cart empty");
       return await result.save();
     } catch (error) {
-      console.log("Failed card delete");
-      console.log(error);
+      logger.error("Failed card delete");
+      logger.error(error);
     }
   };
 
@@ -96,11 +100,11 @@ export default class CartManagerM {
         { $pull: { products: { productId: pid } } },
         { new: true }
       ).populate("products.productId");
-      console.log("Deleted product in cart success");
+      logger.info("Deleted product in cart success");
       return result;
     } catch (error) {
-      console.log(error);
-      console.log("Failed product remove in cart");
+      logger.error(error);
+      logger.error("Failed product remove in cart");
     }
   };
 
@@ -113,11 +117,11 @@ export default class CartManagerM {
       cart.products = cart.products.filter(
         (product) => product.productId !== null
       );
-      console.log("Get cart");
+      logger.info("Get cart");
       return cart;
     } catch (err) {
-      console.log("Failed get cart");
-      console.log(err);
+      logger.error("Failed get cart");
+      logger.error(err);
     }
   };
 
@@ -132,40 +136,42 @@ export default class CartManagerM {
       );
 
       if (productIndex === -1) {
-        console.log("El producto no se encuentra en el carrito.");
+        logger.warning("El producto no se encuentra en el carrito.");
         return null;
       }
 
       const stock = cart.products[productIndex].productId.stock;
 
       if (stock < amount) {
+        logger.warning("No stock");
         return "No stock";
       }
 
       cart.products[productIndex].amount = amount;
+
+      logger.info("Cart update");
+
       return cart.save();
     } catch (err) {
       //     throw new Error(err?.message);
-      console.log(err);
-      console.log("no es posible agregar el producto al carrito");
+      logger.error(err);
+      logger.error("no es posible agregar el producto al carrito");
     }
   };
 
   updateCart = async (cid, pid, productUpdate) => {
     try {
-      //    let {id} = req.params;
-      //  let productUpdate = req.body;
-
       let result = await ProductModel.findByIdAndUpdate(
         { _id: cid, _id: pid },
         productUpdate
       );
-      // res.send({status: "succes", payload: result})
-      console.log("carrito actualizado con exito");
+      
+      logger.info("Cart update");
+      
       return result;
     } catch (error) {
-      console.log(error);
-      console.log("erro al actualizar el carrito");
+      logger.error(error);
+      logger.error("erro al actualizar el carrito");
     }
   };
 }

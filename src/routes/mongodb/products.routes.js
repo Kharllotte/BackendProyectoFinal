@@ -24,7 +24,7 @@ productRouter.get("/", authMiddleware.isLoggedIn, async (req, res) => {
       payload,
     });
   } catch (error) {
-    console.log(error);
+    logger.error(error)
   }
 });
 
@@ -37,7 +37,7 @@ productRouter.get("/:id", authMiddleware.isLoggedIn, async (req, res) => {
       payload,
     });
   } catch (error) {
-    console.log(error);
+    logger.error(error)
   }
 });
 

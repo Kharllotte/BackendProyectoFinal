@@ -1,4 +1,5 @@
 import { ProductModel } from "../../models/mongodb/products.js";
+import logger from "../../../utils/logger/index.js";
 
 export default class productManager {
   constructor() {}
@@ -29,6 +30,8 @@ export default class productManager {
       sort,
     });
 
+    logger.info("Get all products");
+
     return products;
   };
 
@@ -40,11 +43,11 @@ export default class productManager {
   getById = async (id) => {
     try {
       const product = await ProductModel.findOne({ _id: id });
-      console.log("Get product");
+      logger.info("Get product");
       return product;
     } catch (err) {
-      console.log("Failed get product");
-      console.log(err);
+      logger.error("Failed get product");
+      logger.error(err);
     }
   };
 
@@ -62,7 +65,7 @@ export default class productManager {
       });
 
       if (exist.length > 0) {
-        console.log(exist);
+        logger.warning("Already product exist");
         throw "Already product exist";
       }
 
@@ -78,10 +81,10 @@ export default class productManager {
       };
 
       const result = await ProductModel.create(newProduct);
-      console.log("Product saved");
+      logger.info("Product saved");
       return result;
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   };
 
@@ -98,14 +101,14 @@ export default class productManager {
       };
 
       let result = await ProductModel.findByIdAndUpdate(
-        { _id: product._id},
+        { _id: product._id },
         newProduct
       );
 
-      console.log("Product updated");
+      logger.info("Product updated");
       return result;
     } catch (error) {
-      console.log(error);
+      logger.error("Get product");
     }
   };
 }

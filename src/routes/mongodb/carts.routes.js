@@ -5,6 +5,7 @@ import TicketsManager from "../../dao/managers/mongodb/tickets.js";
 import authMiddleware from "../../helpers/auth.js";
 import nodemailer from "nodemailer";
 import helperMain from "../../helpers/index.js";
+import logger from "../../utils/logger/index.js";
 
 const carts = new cartsManager();
 const tickets = new TicketsManager();
@@ -20,7 +21,7 @@ cartsRouter.get("/", async (req, res) => {
       payload: getAllCarts,
     });
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 });
 
@@ -37,7 +38,7 @@ cartsRouter.get(
         payload: cart,
       });
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   }
 );
@@ -55,8 +56,7 @@ cartsRouter.post(
       const result = await carts.save(query);
       return res.status(201).json({ result: "succes", payload: result });
     } catch (err) {
-      console.log("no es posible acceder a la ruta");
-      console.log(err);
+      logger.error(err);
     }
   }
 );
@@ -77,7 +77,7 @@ cartsRouter.post(
 
       return res.status(201).json({ result: "succes", payload: result });
     } catch (err) {
-      console.log(err);
+      logger.error(err);
       return res.status(500).json({ result: "false", payload: err });
     }
   }
@@ -96,13 +96,13 @@ cartsRouter.put(
 
       const cart = await carts.getById(cid);
 
-      if (!cart) console.log("Cart not found");
+      if (!cart) logger.warning("Cart not found");
 
       const result = await carts.updateAmountProductsInCart(cart, pid, amount);
       if (result == "No stock") throw "No stock";
       return res.status(201).json({ result: "s;ucces", payload: result });
     } catch (err) {
-      console.log(err);
+      logger.error(err);
       return res.status(500).json({ result: "false", payload: err });
     }
   }
@@ -121,7 +121,7 @@ cartsRouter.delete(
       const result = await carts.deleteProductInCart(cid, pid);
       return res.status(201).json({ result: "succes", payload: result });
     } catch (err) {
-      console.log(err);
+      logger.error(err);
     }
   }
 );
@@ -133,7 +133,7 @@ cartsRouter.delete("/:cid", async (req, res) => {
     const result = await carts.delete(cid);
     return res.status(201).json({ result: "succes", payload: result });
   } catch (err) {
-    console.log(err);
+    logger.error(err);
   }
 });
 
@@ -144,7 +144,7 @@ cartsRouter.delete("/:cid/empty", async (req, res) => {
     const result = await carts.empty(cid);
     return res.status(201).json({ result: "succes", payload: result });
   } catch (err) {
-    console.log(err);
+    logger.error(err);
   }
 });
 
@@ -223,7 +223,7 @@ cartsRouter.post(
         newCart,
       });
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   }
 );
@@ -265,9 +265,9 @@ async function sendEmail(products, ticket, user) {
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log("Correo electrónico enviado:", info.response);
+    logger.info("Correo electrónico enviado:", info.response);
   } catch (error) {
-    console.error("Error al enviar el correo:", error);
+    logger.error("Error al enviar el correo:", error);
   }
 }
 

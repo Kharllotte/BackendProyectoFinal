@@ -5,6 +5,7 @@ import userModel from "../dao/models/mongodb/user.js";
 import { Strategy as GitHubStrategy } from "passport-github2";
 import cartsManager from "../dao/managers/mongodb/carts.js";
 import env from "../config/env.js";
+import logger from "../utils/logger/index.js";
 
 const LocalStrategy = local.Strategy;
 const carts = new cartsManager();
@@ -19,7 +20,7 @@ const initializePassport = () => {
         try {
           const user = await userModel.findOne({ email });
           if (user) {
-            console.log("User already exists");
+            logger.warning("User already exists");
             return done(null, false);
           }
 
@@ -52,11 +53,11 @@ const initializePassport = () => {
             .findOne({ email })
             .populate("cart.carts");
           if (!user) {
-            console.log("User no found");
+            logger.warning("User no found");
             done(null, false);
           }
           if (!isValidPassword(user, password)) {
-            console.log("Incorrect password");
+            logger.warning("Incorrect password");
             return done(null, false);
           }
           done(null, user);
@@ -116,7 +117,6 @@ const createCart = async () => {
 
 export const authorization = (rol) => {
   return (req, res, next) => {
-    console.log("midelware", req.session.user.rol);
     if (req.isAuthenticated() && req.session.user.rol === rol) {
       return next();
     } else {

@@ -9,7 +9,7 @@ productsMock.get("/", async (req, res) => {
     const productos = generateProducts(100);
     res.send(productos);
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 });
 

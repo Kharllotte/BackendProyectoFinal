@@ -18,7 +18,7 @@ productsRouterView.get("/", authMiddleware.isLoggedIn, async (req, res) => {
       products,
     });
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 });
 
@@ -30,7 +30,7 @@ productsRouterView.get("/:id", authMiddleware.isLoggedIn, async (req, res) => {
       product: getProduct,
     });
   } catch (error) {
-    console.log(error);
+    logger.error(error);
   }
 });
 
@@ -44,7 +44,7 @@ productsRouterView.post(
       await product.add(payload);
       return res.redirect("/products");
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   }
 );
@@ -59,7 +59,7 @@ productsRouterView.post(
       await product.update(payload);
       return res.redirect("/products");
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   }
 );
@@ -82,7 +82,7 @@ productsRouterView.post(
         payload: getProduct,
       });
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   }
 );
