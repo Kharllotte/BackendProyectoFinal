@@ -13,17 +13,22 @@ const tickets = new TicketsManager();
 const cartsRouter = Router();
 
 //Consultar todos los carritos
-cartsRouter.get("/", async (req, res) => {
-  try {
-    const getAllCarts = await carts.get();
-    return res.json({
-      result: "success",
-      payload: getAllCarts,
-    });
-  } catch (error) {
-    logger.error(error);
+cartsRouter.get(
+  "/",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isAdmin,
+  async (req, res) => {
+    try {
+      const getAllCarts = await carts.get();
+      return res.json({
+        result: "success",
+        payload: getAllCarts,
+      });
+    } catch (error) {
+      logger.error(error);
+    }
   }
-});
+);
 
 cartsRouter.get(
   "/:cid",

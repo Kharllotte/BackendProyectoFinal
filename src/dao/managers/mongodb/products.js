@@ -64,6 +64,8 @@ export default class productManager {
         ],
       });
 
+      console.log(exist);
+
       if (exist.length > 0) {
         logger.warning("Already product exist");
         throw "Already product exist";

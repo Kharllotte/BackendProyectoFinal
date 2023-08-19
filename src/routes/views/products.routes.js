@@ -87,7 +87,7 @@ productsRouterView.post(
 productsRouterView.post(
   "/update",
   authMiddleware.isLoggedIn,
-  authMiddleware.isAdmin,
+  authMiddleware.isAdminOrPremium,
   async (req, res) => {
     try {
       const payload = req.body;
@@ -102,7 +102,7 @@ productsRouterView.post(
 productsRouterView.post(
   "/inactive/:id",
   authMiddleware.isLoggedIn,
-  authMiddleware.isAdmin,
+  authMiddleware.isAdminOrPremium,
   async (req, res) => {
     try {
       const id = req.params.id;

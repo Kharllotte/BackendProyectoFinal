@@ -35,6 +35,10 @@ import productsMock from "./routes/mongodb/products.mock.routes.js";
 
 // Logger
 import logger from "../src/utils/logger/index.js";
+import swaggerJSDoc from "swagger-jsdoc";
+
+// Swagger
+import swaggerUiExpress from "swagger-ui-express";
 
 // save express framework
 const app = express();
@@ -106,6 +110,20 @@ app.use((req, res, next) => {
   next();
 });
 
+const swaggerOptions = {
+  definition: {
+    openapi: "3.0.1",
+    info: {
+      title: "Documentación de Mi Tienda",
+      description: "La documentación de los endpoints. Todos los endpoints requieres estar autenticados",
+    },
+  },
+  apis: [`${__dirname}/docs/**/*.yaml`],
+};
+
+const specs = swaggerJSDoc(swaggerOptions);
+app.use("/docs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
@@ -119,12 +137,12 @@ app.engine(
       jsonify: function (context) {
         return JSON.stringify(context);
       },
-      or: function(a, b, options) {
+      or: function (a, b, options) {
         if (a || b) {
           return options.fn(this);
         }
         return options.inverse(this);
-      }
+      },
     },
   })
 );
