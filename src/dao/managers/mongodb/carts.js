@@ -19,7 +19,7 @@ export default class CartManagerM {
     }
   };
 
-  saveProductInCart = async (cid, pid) => {
+  saveProductInCart = async (cid, pid, user) => {
     try {
       const cart = await this.getById(cid);
       if (!cart) {
@@ -37,6 +37,11 @@ export default class CartManagerM {
       if (product.stock < 1) {
         logger.warning("No stock");
         return "No stock";
+      }
+
+      if (product.owner == user.email) {
+        logger.error("Owner product");
+        throw 'Owner product'
       }
 
       const query = {

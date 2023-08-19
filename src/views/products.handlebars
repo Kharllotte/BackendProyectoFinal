@@ -36,11 +36,26 @@
               </button>
               <button onclick="deleteProduct('{{_id}}')" class="trash" id="trash" data-id="{{_id}}">
                 <i class="fa-solid fa-trash"></i>
-              </button>
+              </button>            
             {{else}}
-              <button class="add add-to-cart" id="add" data-id="{{_id}}">
-                <i class="fa-solid fa-cart-plus add" data-id="{{_id}}"></i>
-              </button>
+              {{#if ../isPremium}}
+                {{#if self}}
+                  <button class="edit" onclick="editProduct('{{_id}}')" id="edit" data-id="{{_id}}">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button onclick="deleteProduct('{{_id}}')" class="trash" id="trash" data-id="{{_id}}">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>     
+                {{else}}
+                  <button class="add add-to-cart" id="add" data-id="{{_id}}">
+                    <i class="fa-solid fa-cart-plus add" data-id="{{_id}}"></i>
+                  </button>
+                {{/if}}
+              {{else}}
+                <button class="add add-to-cart" id="add" data-id="{{_id}}">
+                  <i class="fa-solid fa-cart-plus add" data-id="{{_id}}"></i>
+                </button>
+              {{/if}}
             {{/if}}
           </div>
         </td>

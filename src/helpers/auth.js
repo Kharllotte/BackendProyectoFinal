@@ -24,6 +24,17 @@ const authMiddleware = {
     return res.redirect("/products");
   },
 
+  isAdminOrPremium(req, res, next) {
+    req.AdminOrPremium = function () {
+      return req.user.role === "admin" || req.user.role === "premium";
+    };
+    if (req.AdminOrPremium()) {
+      return next();
+    }
+
+    return res.redirect("/products");
+  },
+
   isUser(req, res, next) {
     req.isUser = function () {
       return req.user.role === "user" || req.user.role === "premium";

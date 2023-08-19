@@ -11,9 +11,27 @@ const productsRouterView = Router();
  * Metodo para obtener los productos con filtros opcionales de:
  * page, limit, category, title (q), price y sort.
  */
+
 productsRouterView.get("/", authMiddleware.isLoggedIn, async (req, res) => {
   try {
-    const products = await product.getAllOutFilter();
+    const user = req.user;
+    const allProducts = await product.getAllOutFilter();
+    const products = allProducts.map((p) => {
+      return {
+        _id: p._id,
+        id: p.id,
+        title: p.title,
+        description: p.description,
+        category: p.category,
+        price: p.price,
+        code: p.code,
+        stock: p.stock,
+        active: p.active,
+        owner: p.owner,
+        self: p.owner == user.email,
+      };
+    });
+
     return res.render("products", {
       products,
     });
@@ -37,11 +55,12 @@ productsRouterView.get("/:id", authMiddleware.isLoggedIn, async (req, res) => {
 productsRouterView.post(
   "/add",
   authMiddleware.isLoggedIn,
-  authMiddleware.isAdmin,
+  authMiddleware.isAdminOrPremium,
   async (req, res) => {
     try {
+      const user = req.user;
       const payload = req.body;
-      await product.add(payload);
+      await product.add(payload, user);
       return res.redirect("/products");
     } catch (error) {
       logger.error(error);

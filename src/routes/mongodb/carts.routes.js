@@ -71,7 +71,9 @@ cartsRouter.post(
       const cid = req.params.cid;
       const pid = req.params.pid;
 
-      const result = await carts.saveProductInCart(cid, pid);
+      const user = req.user;
+
+      const result = await carts.saveProductInCart(cid, pid, user);
 
       if (result == "No stock") throw "No stock";
 

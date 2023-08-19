@@ -51,7 +51,7 @@ export default class productManager {
     }
   };
 
-  add = async (product) => {
+  add = async (product, user) => {
     try {
       const exist = await ProductModel.find({
         $or: [
@@ -69,6 +69,8 @@ export default class productManager {
         throw "Already product exist";
       }
 
+      const owner = user.role == 'admin' ? 'admin' : user.email;
+
       const newProduct = {
         id: `${product.productName}${product.productCode}`,
         title: product.productName,
@@ -78,6 +80,7 @@ export default class productManager {
         stock: product.productStock,
         category: product.productCategory,
         active: true,
+        owner
       };
 
       const result = await ProductModel.create(newProduct);
