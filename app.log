@@ -106,3 +106,439 @@
 2023-08-17T01:35:52.695Z [[32minfo[39m]: [32mProduct updated[39m
 2023-08-17T01:36:14.182Z [[32minfo[39m]: [32mProduct saved[39m
 2023-08-17T01:36:16.725Z [[32minfo[39m]: [32mGet product[39m
+2023-08-17T23:31:38.553Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-17T23:31:38.568Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:08:39.962Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:08:39.975Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:13:09.302Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:13:09.319Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:22:48.240Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-18T23:22:50.648Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-18T23:25:36.228Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-18T23:25:38.196Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-18T23:25:54.186Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-18T23:37:33.672Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:37:33.693Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:38:59.779Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:38:59.799Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:42:34.954Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:42:34.968Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:46:14.295Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:46:14.315Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:49:41.863Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:49:41.882Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:50:30.085Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:50:30.099Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:51:11.278Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:51:11.298Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:51:55.599Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:51:55.616Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:52:50.395Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:52:50.415Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:53:21.945Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:53:21.962Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:55:43.394Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:55:43.412Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:58:17.575Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:58:17.600Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:58:23.257Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-18T23:58:33.531Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:58:33.552Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:58:50.814Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:58:50.835Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:58:52.880Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-18T23:59:21.779Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-18T23:59:21.795Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-18T23:59:41.236Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-18T23:59:43.560Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-18T23:59:50.916Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:00:03.730Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:00:03.749Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:00:05.597Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:02:04.845Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:02:04.859Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:02:20.329Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:02:20.345Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:03:19.711Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:03:19.734Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:03:35.433Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:03:35.458Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:03:55.429Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:03:55.444Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:06:10.858Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:06:10.873Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:06:25.310Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:06:25.325Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:06:37.559Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:06:37.588Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:06:39.168Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:06:39.169Z [[31merror[39m]: [31mpasswordReset.create is not a function[39m
+2023-08-19T00:06:39.170Z [[31merror[39m]: [31mFailed saved passwordReset[39m
+2023-08-19T00:07:41.033Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:07:41.048Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:08:38.360Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:08:38.374Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:08:40.378Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:08:40.379Z [[31merror[39m]: [31mPasswordResetModel.create is not a function[39m
+2023-08-19T00:08:40.380Z [[31merror[39m]: [31mFailed saved passwordReset[39m
+2023-08-19T00:08:56.507Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:08:56.529Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:09:00.992Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:09:01.008Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:10:31.289Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:10:31.309Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:10:38.642Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:10:38.661Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:10:48.905Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:10:49.037Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T00:11:46.118Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:11:46.133Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:11:47.621Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:11:47.753Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T00:15:39.979Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:15:40.006Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:15:49.510Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:15:49.639Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T00:17:02.791Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:17:02.813Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:17:43.273Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:17:43.290Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:21:34.637Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:21:34.658Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:21:52.791Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:21:58.117Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:22:18.693Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:22:18.737Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:22:20.174Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:22:26.587Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:22:26.606Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:22:28.028Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:22:35.612Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:23:06.014Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:23:06.029Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:23:08.463Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:23:31.908Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:24:04.771Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:24:04.787Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:24:30.731Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:24:30.761Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:24:32.191Z [[31merror[39m]: [31mpasswordReset url[39m
+2023-08-19T00:24:32.192Z [[31merror[39m]: [31mCannot populate path `user` because it is not in your schema. Set the `strictPopulate` option to false to override.[39m
+2023-08-19T00:24:51.634Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:24:51.651Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:25:03.453Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:25:48.920Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:25:48.948Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:25:50.385Z [[31merror[39m]: [31mpasswordReset url[39m
+2023-08-19T00:25:50.386Z [[31merror[39m]: [31mCannot populate path `users.userId` because it is not in your schema. Set the `strictPopulate` option to false to override.[39m
+2023-08-19T00:26:36.589Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:26:36.607Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:26:42.007Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:28:27.766Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:28:27.782Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:28:29.339Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:29:04.195Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:29:04.212Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:29:05.785Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:29:27.794Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:29:27.813Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:29:52.576Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:30:06.874Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:30:06.909Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:30:12.056Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:30:33.927Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:30:33.947Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:30:35.505Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:30:55.187Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:30:55.206Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:30:56.759Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:31:41.761Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:39:47.144Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:39:47.158Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:39:50.364Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:39:50.380Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:40:23.676Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:40:23.699Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:40:36.731Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:40:36.746Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:42:55.759Z [[32minfo[39m]: [32mError connecting to database[39m
+2023-08-19T00:42:55.777Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:43:50.329Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:43:50.344Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:45:47.698Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:45:47.714Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:45:49.294Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:46:14.327Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T00:46:24.647Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:47:18.182Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:47:18.199Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:47:22.772Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:48:03.383Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:48:03.401Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:48:04.941Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:48:38.909Z [[32minfo[39m]: [32mError connecting to database[39m
+2023-08-19T00:48:38.926Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:48:55.315Z [[31merror[39m]: [31mpasswordReset url[39m
+2023-08-19T00:48:55.316Z [[31merror[39m]: [31mOperation `passwordresets.findOne()` buffering timed out after 10000ms[39m
+2023-08-19T00:48:55.898Z [[31merror[39m]: [31mpasswordReset url[39m
+2023-08-19T00:48:55.899Z [[31merror[39m]: [31mOperation `passwordresets.findOne()` buffering timed out after 10000ms[39m
+2023-08-19T00:49:11.183Z [[31merror[39m]: [31mpasswordReset url[39m
+2023-08-19T00:49:11.184Z [[31merror[39m]: [31mOperation `passwordresets.findOne()` buffering timed out after 10000ms[39m
+2023-08-19T00:49:34.317Z [[31merror[39m]: [31mpasswordReset url[39m
+2023-08-19T00:49:34.318Z [[31merror[39m]: [31mOperation `passwordresets.findOne()` buffering timed out after 10000ms[39m
+2023-08-19T00:50:06.753Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:50:06.767Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:50:21.766Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:50:49.777Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:50:49.793Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:50:53.912Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:50:53.926Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:50:58.067Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:50:58.082Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:51:05.322Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:51:40.380Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T00:51:40.410Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T00:52:00.366Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:52:32.327Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:52:32.343Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:52:59.518Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:52:59.534Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:52:59.910Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:53:11.367Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:53:11.382Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:53:36.402Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:53:36.419Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:53:38.447Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:55:39.011Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:56:23.422Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:56:23.437Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:56:28.055Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:58:29.577Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:58:29.594Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:58:30.164Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:58:52.417Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:58:52.438Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:58:54.407Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:58:56.661Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:58:56.742Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T00:59:32.605Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T00:59:32.621Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T00:59:33.005Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:59:38.529Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T00:59:38.592Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T00:59:50.582Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T01:00:09.824Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:00:09.838Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:01:15.138Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:01:15.155Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:01:24.702Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:01:24.718Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:03:35.143Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:03:35.163Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:04:17.230Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:04:17.246Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:14:34.052Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:14:34.066Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:14:48.582Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:14:48.600Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:16:03.498Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:16:03.516Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:16:12.283Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:16:49.429Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:16:49.445Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:16:49.512Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:16:59.180Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:16:59.202Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:16:59.379Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:17:04.562Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:17:42.459Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:17:42.475Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:17:44.030Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:18:19.964Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:18:19.982Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:18:21.759Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:18:31.188Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:18:31.203Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:18:32.185Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:18:40.403Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:18:40.419Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:18:40.914Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:18:57.784Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:18:57.796Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:19:40.995Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:19:41.008Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:19:42.687Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:20:03.487Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:20:03.502Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:20:04.517Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:20:48.606Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:20:48.624Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:20:49.479Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:21:00.325Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:21:00.342Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:21:01.529Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:21:11.898Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:21:11.914Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:21:17.357Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:21:17.498Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:21:17.510Z [[31merror[39m]: [31mUpdate status[39m
+2023-08-19T01:21:17.511Z [[31merror[39m]: [31mCast to ObjectId failed for value "{ id: new ObjectId("64e0121c034dc4bd5d507f7b") }" (type Object) at path "_id" for model "passwordReset"[39m
+2023-08-19T01:21:26.893Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T01:21:33.060Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:22:04.298Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:22:04.311Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:22:14.499Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:22:19.435Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:22:19.558Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:22:19.562Z [[31merror[39m]: [31mUpdate status[39m
+2023-08-19T01:22:19.563Z [[31merror[39m]: [31mCast to ObjectId failed for value "{ id: new ObjectId("64e0193cca16f0e33205f3b3") }" (type Object) at path "_id" for model "passwordReset"[39m
+2023-08-19T01:22:28.577Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:23:12.973Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:23:12.994Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:23:16.415Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:23:16.541Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:23:16.551Z [[32minfo[39m]: [32mUpdate status[39m
+2023-08-19T01:23:16.551Z [[31merror[39m]: [31mUpdate status[39m
+2023-08-19T01:23:16.552Z [[31merror[39m]: [31muser is not defined[39m
+2023-08-19T01:23:42.923Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:23:48.849Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:23:48.864Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:24:08.587Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:24:08.605Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:24:29.241Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:24:35.375Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:24:35.517Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:24:35.528Z [[32minfo[39m]: [32mUpdate status[39m
+2023-08-19T01:24:35.529Z [[31merror[39m]: [31mUpdate status[39m
+2023-08-19T01:24:35.530Z [[31merror[39m]: [31muser is not defined[39m
+2023-08-19T01:25:02.989Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:25:03.004Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:25:48.873Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:25:48.890Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:25:52.027Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:25:55.690Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T01:26:01.205Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:26:01.225Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:26:12.107Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:26:22.039Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:26:28.457Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:26:28.591Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:26:28.600Z [[32minfo[39m]: [32mUpdate status[39m
+2023-08-19T01:26:28.604Z [[31merror[39m]: [31mUpdate status[39m
+2023-08-19T01:26:28.605Z [[31merror[39m]: [31muser is not defined[39m
+2023-08-19T01:27:10.262Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:27:10.280Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:27:19.562Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:27:19.577Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:27:26.056Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:27:29.655Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T01:27:34.712Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:27:34.734Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:27:44.268Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:27:48.256Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:27:48.378Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:27:48.387Z [[32minfo[39m]: [32mUpdate status[39m
+2023-08-19T01:27:56.593Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T01:30:18.433Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:30:18.450Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:31:32.969Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:31:32.985Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:35:27.826Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:35:27.840Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:36:46.224Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:36:46.238Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:36:54.305Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:36:54.321Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:37:38.157Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:37:38.173Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:38:33.283Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:38:33.300Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:38:40.105Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:38:40.128Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:39:25.127Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:39:25.133Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:39:45.925Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:39:45.941Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:39:46.010Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:39:46.022Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:40:14.779Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:40:14.799Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:40:15.830Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:40:15.848Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:40:30.987Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:40:31.003Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:40:32.735Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:40:32.748Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:41:29.294Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:41:29.310Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:41:34.859Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:41:34.873Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:41:44.094Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:42:05.256Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:42:05.273Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:43:32.620Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:43:32.636Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:44:54.552Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:44:54.568Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:45:00.260Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:45:05.347Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:45:05.484Z [[32minfo[39m]: [32mPassword update[39m
+2023-08-19T01:45:05.499Z [[32minfo[39m]: [32mUpdate status[39m
+2023-08-19T01:45:23.068Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:45:23.073Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:46:01.350Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:46:03.007Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:46:03.026Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:46:06.762Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:46:06.779Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:46:15.479Z [[32minfo[39m]: [32mGet user by email[39m
+2023-08-19T01:46:15.495Z [[32minfo[39m]: [32mpasswordReset saved[39m
+2023-08-19T01:46:33.503Z [[32minfo[39m]: [32mGet passwordReset by url[39m
+2023-08-19T01:48:23.115Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:48:23.133Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:49:09.100Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:49:09.117Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:50:30.235Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:50:30.254Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:50:56.170Z [[32minfo[39m]: [32mProduct saved[39m
+2023-08-19T01:54:37.329Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:54:37.347Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:55:56.965Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:55:56.985Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T01:57:26.338Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T01:57:26.353Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:01:42.915Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T02:01:42.933Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:03:08.183Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T02:03:08.200Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:05:22.167Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T02:05:22.184Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:05:42.524Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-19T02:05:42.526Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-19T02:05:42.541Z [[32minfo[39m]: [32mToggle user rol[39m
+2023-08-19T02:17:01.177Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T02:17:01.193Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:17:53.944Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T02:17:53.961Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:18:35.900Z [[33mwarning[39m]: [33mIncorrect password[39m
+2023-08-19T02:21:57.903Z [[33mwarning[39m]: [33mIncorrect password[39m
+2023-08-19T02:26:00.939Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-19T02:26:00.955Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-19T02:26:01.452Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T02:26:03.828Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T02:26:03.831Z [[32minfo[39m]: [32mGet product[39m
+2023-08-19T02:26:03.835Z [[32minfo[39m]: [32mProduct saved in cart[39m
+2023-08-19T02:26:10.304Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:26:14.433Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:26:45.156Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:26:47.963Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:27:26.669Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:27:32.055Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:27:34.140Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:27:36.452Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:27:40.688Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:28:08.685Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:28:18.671Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-19T02:28:21.805Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:28:36.294Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-19T02:29:31.670Z [[32minfo[39m]: [32mMessages get all successfull[39m

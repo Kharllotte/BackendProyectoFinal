@@ -1,7 +1,7 @@
 .btn-stick {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 50px;
+  right: 5px;
   width: auto;
   height: auto;
   padding: 10px;
@@ -10,7 +10,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1;
 }
 
 a.btn {

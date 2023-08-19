@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     role:{
         type: String,
         index: true,
-        enum: ['user', 'admin', 'qa'],
+        enum: ['user', 'admin', 'qa', 'premium'],
         default: 'user'
     },
     age: Number

@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="/css/table.css" />
 
-{{#if isAdmin}}
+{{#or isAdmin isPremium}}
   {{>products.action}}
   {{>modal.add.product}}
-{{/if}}
+{{/or}}
 <table>
   <thead>
     <tr>

@@ -1,5 +1,6 @@
 import express from "express";
 import productRouter from "./routes/mongodb/products.routes.js";
+import usersRouter from "./routes/mongodb/users.routes.js";
 import productsRouterView from "./routes/views/products.routes.js";
 import cartRouter from "./routes/mongodb/carts.routes.js";
 import env from "./config/env.js";
@@ -95,6 +96,10 @@ app.use((req, res, next) => {
   if (req.isAuthenticated()) isAdmin = req.user.role === "admin";
   res.locals.isAdmin = isAdmin;
 
+  let isPremium = null;
+  if (req.isAuthenticated()) isPremium = req.user.role === "premium";
+  res.locals.isPremium = isPremium;
+
   let user = null;
   if (req.isAuthenticated()) user = req.user;
   res.locals.user = user;
@@ -114,6 +119,12 @@ app.engine(
       jsonify: function (context) {
         return JSON.stringify(context);
       },
+      or: function(a, b, options) {
+        if (a || b) {
+          return options.fn(this);
+        }
+        return options.inverse(this);
+      }
     },
   })
 );
@@ -127,6 +138,7 @@ app.use("/", express.static(__dirname + "/public"));
 // apis
 app.use("/api/carts", cartRouter);
 app.use("/api/products", productRouter);
+app.use("/api/users", usersRouter);
 //web
 app.use("/chat", chatRouter);
 app.use("/products", productsRouterView);

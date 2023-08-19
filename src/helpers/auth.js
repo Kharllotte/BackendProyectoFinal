@@ -26,7 +26,7 @@ const authMiddleware = {
 
   isUser(req, res, next) {
     req.isUser = function () {
-      return req.user.role === "user";
+      return req.user.role === "user" || req.user.role === "premium";
     };
     if (req.isUser()) {
       return next();
