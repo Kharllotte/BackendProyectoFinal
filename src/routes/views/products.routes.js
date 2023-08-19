@@ -2,6 +2,7 @@ import { Router } from "express";
 import productManager from "../../dao/managers/mongodb/products.js";
 
 import authMiddleware from "../../helpers/auth.js";
+import logger from "../../utils/logger/index.js";
 
 const product = new productManager();
 
@@ -43,7 +44,22 @@ productsRouterView.get("/", authMiddleware.isLoggedIn, async (req, res) => {
 productsRouterView.get("/:id", authMiddleware.isLoggedIn, async (req, res) => {
   try {
     const id = req.params.id;
-    const getProduct = await product.getById(id);
+    const infoProduct = await product.getById(id);
+
+    const getProduct = {
+      _id: infoProduct._id,
+      id: infoProduct.id,
+      title: infoProduct.title,
+      description: infoProduct.description,
+      category: infoProduct.category,
+      price: infoProduct.price,
+      code: infoProduct.code,
+      stock: infoProduct.stock,
+      active: infoProduct.active,
+      owner: infoProduct.owner,
+      self: infoProduct.owner == req.user.email,
+    };
+
     return res.render("product", {
       product: getProduct,
     });

@@ -14,7 +14,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 header h1 {
@@ -168,4 +167,18 @@ a.see:hover {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 56px);
 }

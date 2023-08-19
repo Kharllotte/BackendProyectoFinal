@@ -42,7 +42,9 @@
     {{#unless isAdmin}}
     {{>cart}}
     {{/unless}}
-    {{{body}}}
+    <main>
+      {{{body}}}
+    </main>
   </body>
   <script>
     document.addEventListener("click", (e) => {

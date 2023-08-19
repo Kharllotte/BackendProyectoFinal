@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="/css/table.css" />
-
+<style>
+  main {
+    justify-content: initial;
+    align-items: initial;
+    display: inline;
+  }
+</style>
 {{#or isAdmin isPremium}}
   {{>products.action}}
   {{>modal.add.product}}
@@ -8,7 +14,6 @@
   <thead>
     <tr>
       <th>Producto</th>
-      <th>ID</th>
       <th>Descripción</th>
       <th>Precio</th>
       <th>Categoría</th>
@@ -20,7 +25,6 @@
     {{#each products}}
       <tr>
         <td>{{title}}</td>
-        <td>{{_id}}</td>
         <td>{{description}}</td>
         <td>{{price}}</td>
         <td>{{category}}</td>
