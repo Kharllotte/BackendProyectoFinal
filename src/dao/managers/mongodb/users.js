@@ -66,4 +66,15 @@ export default class Users {
       logger.error(error);
     }
   };
+
+  update = async (uid, user) => {
+    try {
+      const result = await userModel.updateOne({ _id: uid }, user);
+      logger.info("Update user success");
+      return result;
+    } catch (error) {
+      logger.debug(err);
+      logger.error("Error update user");
+    }
+  };
 }

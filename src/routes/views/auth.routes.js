@@ -187,8 +187,10 @@ authRouterView.post(
   })
 );
 
-authRouterView.get("/logout", authMiddleware.isLoggedIn, (req, res) => {
+authRouterView.get("/logout", authMiddleware.isLoggedIn, async (req, res) => {
   req.session.destroy();
+  req.user.lastConnection = Date.now();
+  await req.user.save();
   res.redirect("/auth/login");
 });
 

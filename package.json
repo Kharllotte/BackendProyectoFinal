@@ -15,6 +15,7 @@
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
     "@handlebars/allow-prototype-access": "^1.0.5",
+    "@isaacs/cliui": "^8.0.2",
     "bcrypt": "^5.1.0",
     "connect-mongo": "^5.0.0",
     "cookie-parser": "^1.4.6",
@@ -28,6 +29,7 @@
     "mongoose": "^7.3.1",
     "mongoose-paginate-v2": "^1.7.1",
     "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
     "nanoid": "^4.0.2",
     "nodemailer": "^6.9.4",
     "nodemon": "^2.0.22",

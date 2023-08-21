@@ -9,6 +9,7 @@ import mongoose from "mongoose";
 import messageManager from "./dao/managers/mongodb/messages.js";
 import connectMongoDB from "connect-mongo";
 import __dirname from "./utils/index.js";
+import usersRouterView from "./routes/views/user.routes.js";
 
 import errorHandler from "./middleware.errors/index.js";
 
@@ -115,7 +116,8 @@ const swaggerOptions = {
     openapi: "3.0.1",
     info: {
       title: "Documentación de Mi Tienda",
-      description: "La documentación de los endpoints. Todos los endpoints requieres estar autenticados",
+      description:
+        "La documentación de los endpoints. Todos los endpoints requieres estar autenticados",
     },
   },
   apis: [`${__dirname}/docs/**/*.yaml`],
@@ -161,6 +163,7 @@ app.use("/api/users", usersRouter);
 app.use("/chat", chatRouter);
 app.use("/products", productsRouterView);
 app.use("/auth", authRouterView);
+app.use("/user", usersRouterView);
 
 // Mocking
 app.use("/mockingproducts", productsMock);

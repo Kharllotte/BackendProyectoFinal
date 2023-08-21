@@ -11,6 +11,10 @@ const helperMain = {
 
     return `${year}/${month}/${day} ${hour}:${minutes} ${ampm}`;
   },
+
+  uploadMulter({ storage }) {
+    
+  },
 };
 
 export default helperMain;

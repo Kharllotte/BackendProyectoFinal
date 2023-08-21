@@ -34,3 +34,12 @@
 2023-08-19T22:59:26.500Z [[31merror[39m]: [31mAlready product exist[39m
 2023-08-19T23:00:31.011Z [[31merror[39m]: [31mAlready product exist[39m
 2023-08-19T23:06:09.344Z [[31merror[39m]: [31mCast to Number failed for value "string" (type string) at path "code" for model "products"[39m
+2023-08-21T16:50:56.712Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:51:02.779Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:51:14.408Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:51:30.809Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:52:10.181Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:52:17.398Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:53:54.719Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:54:18.956Z [[31merror[39m]: [31mError update files[39m
+2023-08-21T16:55:09.936Z [[31merror[39m]: [31mError update files[39m

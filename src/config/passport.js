@@ -60,6 +60,8 @@ const initializePassport = () => {
             logger.warning("Incorrect password");
             return done(null, false);
           }
+          user.lastConnection = Date.now();
+          await user.save();
           done(null, user);
         } catch (err) {
           return done(err);
