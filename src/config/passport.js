@@ -33,6 +33,7 @@ const initializePassport = () => {
             age,
             password: createHash(password),
             cart,
+            lastConnection: Date.now()
           };
           const result = await userModel.create(newUser);
           return done(null, result);

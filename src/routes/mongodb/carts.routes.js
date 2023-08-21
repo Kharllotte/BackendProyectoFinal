@@ -6,6 +6,7 @@ import authMiddleware from "../../helpers/auth.js";
 import nodemailer from "nodemailer";
 import helperMain from "../../helpers/index.js";
 import logger from "../../utils/logger/index.js";
+import env from "../../config/env.js";
 
 const carts = new cartsManager();
 const tickets = new TicketsManager();
@@ -239,8 +240,8 @@ async function sendEmail(products, ticket, user) {
   const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.EMAIL_TOKEN,
+      user: env.EMAIL,
+      pass: env.EMAIL_TOKEN,
     },
   });
 
@@ -266,7 +267,7 @@ async function sendEmail(products, ticket, user) {
   const mailOptions = {
     from: "lilikathe99@gmail.com",
     to: user,
-    subject: "Asunto del correo",
+    subject: "Factura de Mi Tienda",
     html,
   };
 

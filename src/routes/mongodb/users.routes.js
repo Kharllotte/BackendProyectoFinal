@@ -5,7 +5,7 @@ import __dirname from "../../utils/index.js";
 import logger from "../../utils/logger/index.js";
 import path from "path";
 import authMiddleware from "../../helpers/auth.js";
-
+import transporter from "../../config/mailer.js";
 const userManager = new Users();
 
 const usersRouter = Router();
@@ -37,7 +37,7 @@ usersRouter.post("/premium/:uid", async (req, res) => {
       allDocuments[i] = true;
     });
 
-    if (!allDocuments.every((e) => true)) {
+    if (!allDocuments.every((e) => e === true)) {
       return res.json({
         success: "false",
         payload: null,
@@ -57,6 +57,61 @@ usersRouter.post("/premium/:uid", async (req, res) => {
     logger.error(error);
   }
 });
+
+usersRouter.get(
+  "/",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isAdmin,
+  async (req, res) => {
+    try {
+      const user = await userManager.getAll(req.user._id);
+      return res.json({
+        success: "true",
+        payload: user,
+        message: "Get all users",
+      });
+    } catch (error) {
+      console.log(error);
+      logger.error(error);
+    }
+  }
+);
+
+usersRouter.delete(
+  "/",
+  authMiddleware.isLoggedIn,
+  authMiddleware.isAdmin,
+  async (req, res) => {
+    try {
+      const users = await userManager.getTwoDaysAgo(req.user._id);
+      for (const user of users) {
+        const mailOptions = {
+          from: "lilikathe99@gmail.com",
+          to: user.email,
+          subject: "Cuenta eliminada por inactividad",
+          html: "<p>Su cuenta ha sido eliminada por tener más de dos días de inactividad.</p>",
+        };
+
+        try {
+          const info = await transporter.sendMail(mailOptions);
+          logger.info("Correo electrónico enviado:", info.response);
+        } catch (error) {
+          logger.error("Error al enviar el correo:", error);
+        }
+      }
+
+      await userManager.deleteTwoDaysAgo(req.user._id);
+      return res.json({
+        success: "true",
+        payload: users,
+        message: "Delete users when last connection two days ago",
+      });
+    } catch (error) {
+      console.log(error);
+      logger.error(error);
+    }
+  }
+);
 
 const storage = (folder) =>
   multer.diskStorage({
@@ -79,6 +134,7 @@ const uploadMiddleware = (folder) => multer({ storage: storage(folder) });
 usersRouter.post(
   "/upload/documents",
   authMiddleware.isLoggedIn,
+  authMiddleware.isUser,
   async (req, res) => {
     try {
       const folder = "documents";

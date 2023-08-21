@@ -4,6 +4,8 @@ import productManager from "../../dao/managers/mongodb/products.js";
 import authMiddleware from "../../helpers/auth.js";
 import logger from "../../utils/logger/index.js";
 
+import transporter from "../../config/mailer.js";
+
 const product = new productManager();
 
 const productsRouterView = Router();
@@ -111,6 +113,22 @@ productsRouterView.post(
 
       getProduct.active = false;
       await getProduct.save();
+
+      if (getProduct.owner != "admin" && req.user.role == 'admin') {
+        const mailOptions = {
+          from: "lilikathe99@gmail.com",
+          to: getProduct.owner,
+          subject: "Producto eliminado de Mi Tienda",
+          html: `<p>El producto <b>${getProduct.title}</b>, ha sido eliminado por el admin.</p>`,
+        };
+
+        try {
+          const info = await transporter.sendMail(mailOptions);
+          logger.info("Correo electrónico enviado:", info.response);
+        } catch (error) {
+          logger.error("Error al enviar el correo:", error);
+        }
+      }
 
       return res.json({
         success: true,

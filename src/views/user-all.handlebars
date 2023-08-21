@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/user.all.css" />
+{{>loader-indeterminate}}
+<div class="d-flex justify-content-end">
+  <button class="btn" onclick="deleteUsers()">Borrar usuarios inactivos</button>
+</div>
+<div class="users-all-table">
+  <table class="users-all-table__table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Rol</th>
+        <th>Años</th>
+        <th>Ultima conexion</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+        <tr class="users-all-table__row">
+          <td class="users-all-table__cell">{{firstName}} {{lastName}}</td>
+          <td class="users-all-table__cell">{{email}}</td>
+          <td class="users-all-table__cell">{{role}}</td>
+          <td class="users-all-table__cell">{{age}}</td>
+          <td class="users-all-table__cell">{{date}}</td>
+          <td class="users-all-table__cell">
+            <button
+              class="users-all-table__action-button"
+              onclick="changeRole('{{role}}', '{{_id}}')"
+              title="Cambiar rol"
+            >
+              {{#if userPremium}}
+                <i class="fa-solid fa-user-tie"></i>
+              {{else}}
+                <i class="user-normal fa-solid fa-user"></i>
+              {{/if}}
+            </button>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+
+<script src="/js/users.all.js"></script>

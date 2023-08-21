@@ -49,3 +49,20 @@
 2023-08-21T18:17:45.485Z [[31merror[39m]: [31mundefined is not a function[39m
 2023-08-21T18:17:55.477Z [[31merror[39m]: [31mtrue is not a function[39m
 2023-08-21T18:18:06.684Z [[31merror[39m]: [31mundefined is not a function[39m
+2023-08-21T18:57:47.790Z [[31merror[39m]: [31mGet all user[39m
+2023-08-21T18:57:47.790Z [[31merror[39m]: [31mExpression $ne takes exactly 2 arguments. 1 were passed in.[39m
+2023-08-21T20:26:43.654Z [[31merror[39m]: [31muser.forEach is not a function[39m
+2023-08-21T20:27:18.355Z [[31merror[39m]: [31muser.forEach is not a function[39m
+2023-08-21T20:28:30.851Z [[31merror[39m]: [31muser.forEach is not a function[39m
+2023-08-21T20:30:20.631Z [[31merror[39m]: [31mError al enviar el correo: transporter is not defined[39m
+2023-08-21T20:36:52.980Z [[31merror[39m]: [31mError al enviar el correo: transporter is not defined[39m
+2023-08-21T20:36:52.984Z [[31merror[39m]: [31mPromise.all is not a constructor[39m
+2023-08-21T20:37:32.764Z [[31merror[39m]: [31mPromise.all is not a constructor[39m
+2023-08-21T20:37:33.306Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:38:00.797Z [[31merror[39m]: [31mundefined is not iterable (cannot read property Symbol(Symbol.iterator))[39m
+2023-08-21T20:38:01.254Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:38:24.361Z [[31merror[39m]: [31mundefined is not iterable (cannot read property Symbol(Symbol.iterator))[39m
+2023-08-21T20:38:24.787Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:39:24.759Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:39:55.450Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:40:41.234Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m

@@ -2,6 +2,8 @@ import { Router } from "express";
 import passport from "passport";
 import authMiddleware from "../../helpers/auth.js";
 
+import env from '../../config/env.js'
+
 import Users from "../../dao/managers/mongodb/users.js";
 const userManager = new Users();
 
@@ -124,7 +126,7 @@ authRouterView.post(
 
       const html = `
       <h3>Para restablecer su contrasena, por favor de clic al enlace:</h3>
-      <a href='${process.env.URL}/auth/recovery-password/${pwr.url}'>Restablecer contrasena</>
+      <a href='${env.URL}/auth/recovery-password/${pwr.url}'>Restablecer contrasena</>
       `;
 
       const mailOptions = {

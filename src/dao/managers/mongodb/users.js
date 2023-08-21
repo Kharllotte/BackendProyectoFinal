@@ -40,6 +40,55 @@ export default class Users {
     }
   };
 
+  getAll = async (uidAdmin) => {
+    try {
+      const users = await userModel
+        .find({ _id: { $ne: uidAdmin } })
+        .select("-password -__v -cart -documents");
+      logger.info("Get all user");
+      return users;
+    } catch (error) {
+      logger.error("Get all user");
+      logger.error(error);
+    }
+  };
+
+  deleteTwoDaysAgo = async (uidAdmin) => {
+    try {
+      const twoDaysAgo = new Date();
+      twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+
+      const users = await userModel.deleteMany({
+        _id: { $ne: uidAdmin },
+        lastConnection: { $lte: twoDaysAgo },
+      });
+
+      logger.info("Delete users when last connection two days ago");
+      return users;
+    } catch (error) {
+      logger.error("Delete users when last connection two days ago");
+      logger.error(error);
+    }
+  };
+
+  getTwoDaysAgo = async (uidAdmin) => {
+    try {
+      const twoDaysAgo = new Date();
+      twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+
+      const users = await userModel.find({
+        _id: { $ne: uidAdmin },
+        lastConnection: { $lte: twoDaysAgo },
+      });
+
+      logger.info("Get all when last connection two days ago");
+      return users;
+    } catch (error) {
+      logger.error("Get all when last connection two days ago");
+      logger.error(error);
+    }
+  };
+
   findByEmail = async (email) => {
     try {
       const user = await userModel.findOne({ email });

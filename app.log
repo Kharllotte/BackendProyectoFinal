@@ -1351,3 +1351,368 @@
 2023-08-21T18:21:56.807Z [[32minfo[39m]: [32mGet cart[39m
 2023-08-21T18:22:02.302Z [[32minfo[39m]: [32mGet cart[39m
 2023-08-21T18:22:04.198Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T18:37:30.829Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T18:37:38.173Z [[32minfo[39m]: [32mMessages get all successfull[39m
+2023-08-21T18:37:44.102Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T18:44:11.580Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:44:11.639Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:44:49.704Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:44:49.766Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:45:13.034Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:45:13.092Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:46:07.142Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:46:55.796Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:46:55.860Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:46:55.948Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:47:05.821Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:47:05.882Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:47:05.964Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:47:12.848Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:47:12.909Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:47:13.055Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:50:23.297Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:50:23.387Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:50:42.408Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:50:42.469Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:50:44.749Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:51:06.131Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:51:20.144Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:51:20.207Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:51:20.380Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:51:35.476Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:51:35.541Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:51:35.694Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:51:55.672Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:52:11.190Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:52:11.252Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:52:11.329Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:52:40.964Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:52:41.025Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:52:45.788Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:52:55.309Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:52:55.367Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:53:04.343Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:53:22.012Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:53:22.078Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:53:22.304Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:53:40.028Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:53:40.088Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:53:40.253Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T18:54:11.925Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:54:11.981Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:56:26.330Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:56:26.389Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:57:32.431Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:57:32.494Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:57:39.289Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:57:39.350Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:57:46.835Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:57:46.912Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:57:47.790Z [[31merror[39m]: [31mGet all user[39m
+2023-08-21T18:57:47.790Z [[31merror[39m]: [31mExpression $ne takes exactly 2 arguments. 1 were passed in.[39m
+2023-08-21T18:58:40.335Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T18:58:40.399Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T18:58:42.374Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:00:42.262Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:00:42.323Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:00:42.451Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:01:00.055Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:01:45.332Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:02:20.855Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:02:20.925Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:02:50.247Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:02:50.313Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:03:11.942Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:03:12.004Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:03:40.425Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:03:40.486Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:05:27.327Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:05:27.391Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:05:37.524Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:05:37.580Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:10:25.168Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:41:38.133Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:42:55.345Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:43:36.378Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:43:47.619Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:44:00.876Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:44:40.811Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:47:19.687Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:47:19.770Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:47:19.990Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:47:23.719Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:47:29.762Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:47:35.825Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:47:46.599Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:47:46.665Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:47:46.732Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:48:23.449Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:48:23.512Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:48:29.098Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:48:29.159Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:48:29.323Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:48:37.512Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:48:37.570Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:48:59.798Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:48:59.863Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:48:59.924Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:49:15.633Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:49:15.769Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:49:15.924Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:49:24.454Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T19:49:24.516Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T19:49:24.655Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:49:36.649Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:59:09.750Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:59:21.546Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:59:42.471Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T19:59:47.447Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:00:01.196Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:00:17.926Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:01:04.111Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:01:04.173Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:02:57.116Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:02:57.239Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:02:58.010Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:02:59.962Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:03:01.604Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:03:42.391Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:03:42.459Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:03:42.610Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:03:45.527Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:03:46.764Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:06:34.158Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:06:59.707Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:07:45.893Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:08:05.929Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:09:37.406Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:09:37.469Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:09:41.605Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:10:01.551Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:11:10.565Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:11:55.437Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:12:42.724Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:14:49.020Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:14:49.086Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:15:02.844Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:15:05.195Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:15:05.200Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:15:05.213Z [[32minfo[39m]: [32mToggle user rol[39m
+2023-08-21T20:15:15.870Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:15:51.891Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:15:51.893Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:15:51.898Z [[32minfo[39m]: [32mToggle user rol[39m
+2023-08-21T20:16:45.426Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:16:45.484Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:17:15.606Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:17:15.668Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:17:16.504Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:17:27.538Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:17:27.595Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:17:28.448Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:18:11.868Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:18:11.932Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:18:20.762Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:18:20.823Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:18:21.767Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:19:31.747Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:19:31.810Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:19:32.449Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:19:33.954Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:21:08.677Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:21:17.416Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:21:18.638Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:21:59.022Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:22:14.817Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:22:20.259Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:25:02.609Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:25:02.668Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:25:17.469Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-21T20:25:17.893Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T20:25:23.097Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:25:56.010Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:25:56.068Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:26:22.106Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-21T20:26:22.483Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T20:26:25.650Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:26:40.437Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:26:43.652Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:26:43.654Z [[31merror[39m]: [31muser.forEach is not a function[39m
+2023-08-21T20:27:18.202Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:27:18.264Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:27:18.351Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:27:18.355Z [[31merror[39m]: [31muser.forEach is not a function[39m
+2023-08-21T20:27:22.471Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:27:22.532Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:27:27.718Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:27:38.481Z [[32minfo[39m]: [32mCart saved[39m
+2023-08-21T20:27:38.771Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T20:28:05.023Z [[32minfo[39m]: [32mGet cart[39m
+2023-08-21T20:28:07.991Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:28:25.624Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:28:30.847Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:28:30.851Z [[31merror[39m]: [31muser.forEach is not a function[39m
+2023-08-21T20:28:55.929Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:29:23.356Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:29:23.419Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:29:29.388Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:29:29.450Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:29:56.624Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:29:56.681Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:30:16.957Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:30:20.630Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:30:20.631Z [[31merror[39m]: [31mError al enviar el correo: transporter is not defined[39m
+2023-08-21T20:30:20.634Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:30:21.986Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:31:09.870Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:31:09.930Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:31:23.934Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:31:30.482Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:31:30.486Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:31:31.403Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:32:17.338Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:32:17.395Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:32:21.460Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:32:21.464Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:32:23.184Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:32:42.879Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:32:42.941Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:32:43.356Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:32:43.362Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:32:44.191Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:32:59.053Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:32:59.116Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:33:39.744Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:33:39.804Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:33:40.441Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:33:40.448Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:33:41.424Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:33:58.986Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:33:59.052Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:35:27.635Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:35:27.700Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:35:48.393Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:35:48.467Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:35:50.811Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:35:50.815Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:35:51.650Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:36:33.795Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:36:33.857Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:36:50.857Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:36:52.979Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:36:52.980Z [[31merror[39m]: [31mError al enviar el correo: transporter is not defined[39m
+2023-08-21T20:36:52.984Z [[31merror[39m]: [31mPromise.all is not a constructor[39m
+2023-08-21T20:37:04.134Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:37:29.581Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:37:29.647Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:37:32.755Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:37:32.764Z [[31merror[39m]: [31mPromise.all is not a constructor[39m
+2023-08-21T20:37:33.306Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:37:56.113Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:37:56.177Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:37:58.847Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:38:00.786Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:38:00.797Z [[31merror[39m]: [31mundefined is not iterable (cannot read property Symbol(Symbol.iterator))[39m
+2023-08-21T20:38:01.254Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:38:13.402Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:38:22.503Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:38:22.567Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:38:24.341Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:38:24.361Z [[31merror[39m]: [31mundefined is not iterable (cannot read property Symbol(Symbol.iterator))[39m
+2023-08-21T20:38:24.787Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:39:21.145Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:39:21.204Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:39:24.354Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:39:24.759Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:39:24.763Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:39:26.190Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:39:43.717Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:39:43.829Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:39:51.872Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:39:55.023Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:39:55.450Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:39:55.454Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:39:56.301Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:40:29.784Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:40:29.854Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:40:38.255Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:40:40.716Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:40:41.234Z [[31merror[39m]: [31mError al enviar el correo: Missing credentials for "PLAIN"[39m
+2023-08-21T20:40:41.238Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:40:42.316Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:41:01.611Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:41:16.521Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:41:16.579Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:42:12.264Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:42:12.325Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:42:39.583Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:42:39.642Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:43:19.548Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:43:19.615Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:43:27.616Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:43:27.690Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:44:07.982Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:44:08.042Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:44:15.819Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:44:15.877Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:44:23.754Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:44:23.816Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:44:50.776Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:44:50.835Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:45:27.560Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:45:27.621Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:45:38.419Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:45:38.476Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:45:44.167Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:45:44.239Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:46:38.530Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:46:38.593Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:47:13.646Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:47:13.709Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:47:43.521Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:47:45.556Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:47:47.668Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-21T20:47:47.675Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:47:50.753Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:49:00.565Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:49:29.918Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:49:29.985Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:49:30.127Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:49:34.954Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:49:38.135Z [[32minfo[39m]: [32mGet user by id[39m
+2023-08-21T20:49:45.388Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:49:45.446Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:52:13.577Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:52:13.640Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:52:22.742Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:53:16.799Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:54:16.061Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:54:47.065Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:55:08.999Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:55:39.175Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:55:45.189Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:57:08.094Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T20:57:08.169Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T20:57:11.335Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:57:48.722Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:57:52.091Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:57:52.096Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:57:53.299Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:58:12.349Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T20:58:14.734Z [[32minfo[39m]: [32mGet all when last connection two days ago[39m
+2023-08-21T20:58:17.169Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-21T20:58:17.172Z [[32minfo[39m]: [32mDelete users when last connection two days ago[39m
+2023-08-21T20:58:18.814Z [[32minfo[39m]: [32mGet all user[39m
+2023-08-21T21:00:00.175Z [[32minfo[39m]: [32mGet product[39m
+2023-08-21T21:02:02.337Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T21:02:02.406Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T21:03:45.908Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T21:03:45.972Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T21:03:51.422Z [[32minfo[39m]: [32mGet product[39m
+2023-08-21T21:03:53.201Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-21T21:04:17.899Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T21:04:17.979Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
+2023-08-21T21:04:37.462Z [[32minfo[39m]: [32mGet product[39m
+2023-08-21T21:04:39.255Z [[32minfo[39m]: [32mCorreo electrónico enviado:[39m
+2023-08-21T21:05:03.715Z [[32minfo[39m]: [32mDB CONNECTED[39m
+2023-08-21T21:05:03.772Z [[32minfo[39m]: [32mSERVER ON PORT: 5000[39m
