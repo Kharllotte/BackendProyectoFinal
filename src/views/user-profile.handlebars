@@ -16,21 +16,34 @@
       <p>Email: {{user.email}}</p>
     </div>
   </div>
+  {{#unless isAdmin}}
   <div class="documents">
     <div class="document">
       <i class="fa-solid fa-address-card"></i>
       <p>Identificación</p>
+      {{#if documents.id}}
       <i class="fas fa-check"></i>
+      {{else}}
+      <i class="fas fa-times"></i>
+      {{/if}}
     </div>
     <div class="document">
       <i class="fa-solid fa-map-location-dot"></i>
       <p>Comprobante de Domicilio</p>
+      {{#if documents.address}}
+      <i class="fas fa-check"></i>
+      {{else}}
       <i class="fas fa-times"></i>
+      {{/if}}
     </div>
     <div class="document">
       <i class="fa-solid fa-file-invoice"></i>
       <p>Comprobante de Estado de Cuenta</p>
+      {{#if documents.accountStatus}}
       <i class="fas fa-check"></i>
+      {{else}}
+      <i class="fas fa-times"></i>
+      {{/if}}
     </div>
   </div>
   <div class="d-flex justify-content-center">
@@ -43,6 +56,7 @@
       <span class="close-documents-modal">&times;</span>
       <h2 class="text-center">Actualizar Documentos</h2>
       <form
+        id="form"
         class="documents-modal-form"
         action="/api/users/upload/documents"
         method="post"
@@ -83,5 +97,6 @@
     </div>
   </div>
   {{! End modal }}
+  {{/unless}}
 </div>
 <script src="/js/modals/profile.js"></script>

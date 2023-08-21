@@ -29,23 +29,25 @@ const userSchema = new mongoose.Schema({
     default: "user",
   },
   age: Number,
-  documents: [
-    {
-      category: {
-        type: String,
-        require: true
+  documents: {
+    type: [
+      {
+        category: {
+          type: String,
+          required: true,
+        },
+        name: {
+          type: String,
+          required: true,
+        },
+        reference: {
+          type: String,
+          required: true,
+        },
       },
-      name: {
-        type: String,
-        require: true,
-      },
-      reference: {
-        type: String,
-        require: true,
-      },
-      default: []
-    },
-  ],
+    ],
+    default: [], // Valor por defecto: un arreglo vacío
+  },
   lastConnection: Date,
 });
 

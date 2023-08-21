@@ -28,6 +28,9 @@
         <script src="/js/main.js"></script>
         {{/unless}}
         {{#if userIsAuthenticated}}
+        <a class="a-profile" href="/user/profile">
+          <i class="fa-solid fa-user"></i>
+        </a>
         <div class="logout" id="btn-logout">
           <i class="logout fa-solid fa-right-from-bracket"></i>
         </div>

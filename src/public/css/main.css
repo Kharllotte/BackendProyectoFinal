@@ -182,3 +182,9 @@ main {
   align-items: center;
   height: calc(100vh - 56px);
 }
+
+.a-profile {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
